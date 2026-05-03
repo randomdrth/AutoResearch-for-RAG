@@ -62,6 +62,9 @@ def score_results(
         Keys: faithfulness, answer_relevancy, context_precision,
               context_recall, overall (average of the four).
     """
+    if not results:
+        raise ValueError("score_results() received an empty list — nothing to evaluate.")
+
     # Build HuggingFace Dataset in the shape RAGAS expects
     dataset = Dataset.from_dict(
         {

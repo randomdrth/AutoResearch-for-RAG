@@ -8,6 +8,7 @@ openai==1.35.3
 datasets==2.20.0
 python-dotenv==1.0.1
 anthropic==0.34.2
+rouge-score==0.1.2
 ragas==0.1.21
 langchain==0.2.16
 langchain-openai==0.1.25

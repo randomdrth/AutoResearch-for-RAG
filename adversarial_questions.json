@@ -1,352 +1,252 @@
 [
   {
-    "_id": "5ac406c155429919431738fc",
-    "question": "What are both Caleb Shomo and Brian Welch?",
-    "answer": "singer",
-    "type": "comparison",
-    "level": "hard"
+    "type": "multi_hop",
+    "question": "What year was the company that acquired Euromarché founded?",
+    "expected_answer": "1959"
   },
   {
-    "_id": "5a79d2fe5542994f819ef0c3",
-    "question": "Who was born first, Aleksandr Ivanovsky or Arthur Lubin?",
-    "answer": "Aleksandr Ivanovsky",
-    "type": "comparison",
-    "level": "hard"
+    "type": "multi_hop",
+    "question": "Which state contains the city that serves as headquarters for the company that is a component of the Euro Stoxx 50 stock market index?",
+    "expected_answer": "France"
   },
   {
-    "_id": "5a7133565542994082a3e65c",
-    "question": "What Kentucky county has a population of 60,316 and features the Lake Louisvilla neighborhood?",
-    "answer": "Oldham County",
-    "type": "bridge",
-    "level": "hard"
+    "type": "multi_hop",
+    "question": "What is the population of the most populated island in the river that forms the border between New South Wales and Queensland near Bonshaw?",
+    "expected_answer": "3,142"
   },
   {
-    "_id": "5a728dc65542992359bc30ef",
-    "question": "What fellow Turkish footballer did Darko Kova\u010devi\u0107 form an offensive partnership with during his tenure at Real Sociedad?",
-    "answer": "Nihat Kahveci",
-    "type": "bridge",
-    "level": "hard"
+    "type": "multi_hop",
+    "question": "In what year did the composer who became a naturalized British subject in 1727 settle in London?",
+    "expected_answer": "1712"
   },
   {
-    "_id": "5ade8b2655429975fa854eff",
-    "question": "What is the nickname of this American retired airline captain celebrated for his water landing with Jeffrey Skiles, after a bird strike and being unable to reach an airport?",
-    "answer": "Sully",
-    "type": "bridge",
-    "level": "hard"
+    "type": "multi_hop",
+    "question": "What conference did the Vermont Catamounts belong to before joining Hockey East in 2005?",
+    "expected_answer": "ECAC Hockey"
   },
   {
-    "_id": "5a7f68365542994857a7672e",
-    "question": "Which band was formed at an earlier date, Unwritten Law or Jon Spencer Blues Explosion?",
-    "answer": "Unwritten Law",
-    "type": "comparison",
-    "level": "hard"
+    "type": "multi_hop",
+    "question": "Which airport does American Airlines Shuttle serve in the city known as the 'Queen City' of Maine?",
+    "expected_answer": "None"
   },
   {
-    "_id": "5a7a9b9a5542990198eaf160",
-    "question": "When was the Chinese American electronic musician and singer who collaborated on the album I Remember born?",
-    "answer": "1989",
-    "type": "bridge",
-    "level": "hard"
+    "type": "multi_hop",
+    "question": "What formation contains the type species of the dinosaur genus whose name combines Greek words for 'ball' and a domed structure?",
+    "expected_answer": "Kirtland Formation"
   },
   {
-    "_id": "5a86458b5542991e771815ec",
-    "question": "What is the population of the city where the Akademisches Kunstmuseum is?",
-    "answer": "300,000",
-    "type": "bridge",
-    "level": "hard"
+    "type": "multi_hop",
+    "question": "How many students did the organization that funds scholarships for historically black colleges support in 2005?",
+    "expected_answer": "65,000"
   },
   {
-    "_id": "5ac079e9554299294b218fff",
-    "question": "What organization does Rosyth Dockyard and Queen Elizabeth-class aircraft carrier have in common?",
-    "answer": "Navy",
-    "type": "bridge",
-    "level": "hard"
+    "type": "multi_hop",
+    "question": "What year did the castle completed around 1495 on the banks of the River Tay first receive permission to be built?",
+    "expected_answer": "1454"
   },
   {
-    "_id": "5ac2758b55429963665199c3",
-    "question": "The organization that Nicolae Titulescu served two terms as president was founded on what date?",
-    "answer": "10 January 1920",
-    "type": "bridge",
-    "level": "hard"
+    "type": "multi_hop",
+    "question": "Which NFL championship team did the coach whose playing career ended due to a neck injury help win in 1985?",
+    "expected_answer": "Chicago Bears"
   },
   {
-    "_id": "5a7a77425542995eb53be83e",
-    "question": "Who has released more solo albums, Nick Carter or Brady Seals?",
-    "answer": "Brady Seals",
-    "type": "comparison",
-    "level": "hard"
+    "type": "multi_hop",
+    "question": "In what county is the village located 783 km north of Sydney near the Queensland border?",
+    "expected_answer": "Arrawatta County"
   },
   {
-    "_id": "5ae694a15542991bbc976141",
-    "question": "Why is Minister Pool important to Black Country and the West Midlands in England?",
-    "answer": "defence of the Cathedral",
-    "type": "bridge",
-    "level": "hard"
+    "type": "multi_hop",
+    "question": "What was the final score when the team that finished as CAA regular season runners-up won the 2012 championship?",
+    "expected_answer": "59-56"
   },
   {
-    "_id": "5ac370ce5542995ef918c18c",
-    "question": "Are Southwest Florida International Airport and Henry E. Rohlsen Airport both in Florida?",
-    "answer": "no",
-    "type": "comparison",
-    "level": "hard"
+    "type": "multi_hop",
+    "question": "Which hockey conference did the team that plays at Gutterson Fieldhouse compete in from 1974-2005?",
+    "expected_answer": "ECAC Hockey"
   },
   {
-    "_id": "5a7f53ff5542992097ad2f17",
-    "question": "In addition to the best known comic servant from Commedia dell'arte, who else is featured in La Surprise de l'amour?",
-    "answer": "Columbine",
-    "type": "bridge",
-    "level": "hard"
+    "type": "multi_hop",
+    "question": "What is the land area in square kilometers of the island that has fewer people than Wheeling Island despite being larger?",
+    "expected_answer": "3.4"
   },
   {
-    "_id": "5ab6ba045542995eadef007e",
-    "question": "Dorian Gray is the main character of what philosophical novel whose editor feared the story was indecent, and deleted roughly five hundred words before publication?",
-    "answer": "The Picture of Dorian Gray",
-    "type": "bridge",
-    "level": "hard"
+    "type": "ambiguous",
+    "question": "What is the significance of the date April 22, 2004?",
+    "expected_answer": "It was the release date of Sacred Planet"
   },
   {
-    "_id": "5ac31ad4554299741d48a1ee",
-    "question": "Are Ainslee's Magazine and The Australian Women's Weekly both monthly magazines?",
-    "answer": "yes",
-    "type": "comparison",
-    "level": "hard"
+    "type": "ambiguous",
+    "question": "Which Robert is associated with investment principles?",
+    "expected_answer": "Warren Buffett"
   },
   {
-    "_id": "5a71166d5542994082a3e576",
-    "question": "Which battle occurred first, the Battle of Manila or the Battle of Guam?",
-    "answer": "Battle of Guam",
-    "type": "comparison",
-    "level": "hard"
+    "type": "ambiguous",
+    "question": "What happened to the passengers who remained on the bus?",
+    "expected_answer": "They were shot"
   },
   {
-    "_id": "5a7a15d35542996a35c170c4",
-    "question": "In what city does a Christian minister who won the singles title with Jan Kodes in the 1970 French Open currently reside?",
-    "answer": "Perth, Western Australia",
-    "type": "bridge",
-    "level": "hard"
+    "type": "ambiguous",
+    "question": "Which film was released in August 2011?",
+    "expected_answer": "Phhir"
   },
   {
-    "_id": "5a81028b55429938b614228a",
-    "question": "For which film did the Director team with NASA scientists, Aliens of the Deep or Poetry in Motion?",
-    "answer": "Aliens of the Deep",
-    "type": "comparison",
-    "level": "hard"
+    "type": "ambiguous",
+    "question": "What is Robert E. Nyce's political background?",
+    "expected_answer": "Former Republican member of the Pennsylvania House of Representatives"
   },
   {
-    "_id": "5a7aa0a55542990198eaf165",
-    "question": "Who was born first, Sathish Kalathil or Jacques Feyder?",
-    "answer": "Jacques Feyder",
-    "type": "comparison",
-    "level": "hard"
+    "type": "ambiguous",
+    "question": "When was the district created?",
+    "expected_answer": "2005"
   },
   {
-    "_id": "5ab846e155429919ba4e229c",
-    "question": "Who won more Grand Slam doubles titles, Tony Roche or Jamie Murray?",
-    "answer": "Anthony Dalton Roche",
-    "type": "comparison",
-    "level": "hard"
+    "type": "ambiguous",
+    "question": "Which director made an influential documentary about concentration camps?",
+    "expected_answer": "Alain Resnais"
   },
   {
-    "_id": "5ade636255429939a52fe896",
-    "question": "Kresy, which roughly was a part of the land beyond the so-called Curson Line, was drawn for what reason?",
-    "answer": "demarcation line between the newly emerging states, the Second Polish Republic, and the Soviet Union",
-    "type": "bridge",
-    "level": "hard"
+    "type": "ambiguous",
+    "question": "What does the band say about where they belong?",
+    "expected_answer": "They might belong in hell"
   },
   {
-    "_id": "5a8e068b5542995085b37384",
-    "question": "Are Ferocactus and Silene both types of plant?",
-    "answer": "yes",
-    "type": "comparison",
-    "level": "hard"
+    "type": "ambiguous",
+    "question": "What type of honours are published in gazettes?",
+    "expected_answer": "Birthday Honours"
   },
   {
-    "_id": "5ab85b1755429916710eb041",
-    "question": "Which mathematician worked with algebraic geometry instead of probability theory, Askold Khovanskii or Andrey Kolmogorov?",
-    "answer": "Askold Georgievich Khovanskii",
-    "type": "comparison",
-    "level": "hard"
+    "type": "ambiguous",
+    "question": "Which castle has multiple names?",
+    "expected_answer": "Hutton Castle"
   },
   {
-    "_id": "5ab6d9b25542995eadef00c8",
-    "question": "Which opera has more acts, Don Quichotte or Tosca?",
-    "answer": "Don Quichotte",
-    "type": "comparison",
-    "level": "hard"
+    "type": "ambiguous",
+    "question": "Who became famous from a German TV series?",
+    "expected_answer": "Raimund Harmstorf"
   },
   {
-    "_id": "5a835a265542992ef85e2281",
-    "question": "What industry does Edgar Selwyn and Chantal Akerman work in?",
-    "answer": "theater and film",
-    "type": "comparison",
-    "level": "hard"
+    "type": "ambiguous",
+    "question": "What does tazweed mean?",
+    "expected_answer": "resupply"
   },
   {
-    "_id": "5add016e5542992c1e3a250b",
-    "question": "What made the man who abolished the Consell in 1718 resume the throne?",
-    "answer": "upon his son's death",
-    "type": "bridge",
-    "level": "hard"
+    "type": "out_of_scope",
+    "question": "What is the capital city of Australia?",
+    "expected_answer": null
   },
   {
-    "_id": "5abb8afe5542993f40c73b1e",
-    "question": "Were both Roger Donaldson and Andr\u00e9 Cayatte french filmmakers?",
-    "answer": "no",
-    "type": "comparison",
-    "level": "hard"
+    "type": "out_of_scope",
+    "question": "How many chromosomes do humans have?",
+    "expected_answer": null
   },
   {
-    "_id": "5adea9ea55429939a52fe934",
-    "question": "What was the name of the fanzine that interviewed the Sex Pistols bassist when he was in the band \"The Flowers of Romance?\"",
-    "answer": "SKUM",
-    "type": "bridge",
-    "level": "hard"
+    "type": "out_of_scope",
+    "question": "What is the chemical formula for water?",
+    "expected_answer": null
   },
   {
-    "_id": "5a8f799d55429918e830d22d",
-    "question": "Which genus has the most number of species, Myrsine or Styrax?",
-    "answer": "Myrsine",
-    "type": "comparison",
-    "level": "hard"
+    "type": "out_of_scope",
+    "question": "Who won the 2020 Nobel Prize in Literature?",
+    "expected_answer": null
   },
   {
-    "_id": "5abdff775542993f32c2a082",
-    "question": "At what theater is the composer and lyricist for the musical Big Fish a residential artist?",
-    "answer": "Ars Nova Theater",
-    "type": "bridge",
-    "level": "hard"
+    "type": "out_of_scope",
+    "question": "What is the largest ocean on Earth?",
+    "expected_answer": null
   },
   {
-    "_id": "5abf12f25542997719eab667",
-    "question": "Are McFarland, USA and The Black Hole both sports films?",
-    "answer": "no",
-    "type": "comparison",
-    "level": "hard"
+    "type": "out_of_scope",
+    "question": "In what year did the Berlin Wall fall?",
+    "expected_answer": null
   },
   {
-    "_id": "5abaee845542996606241696",
-    "question": "On February 25, 2017 tony Harrison lost the the International Boxing Federation light middleweight world title to a boxer from what state?",
-    "answer": "Maryland",
-    "type": "bridge",
-    "level": "hard"
+    "type": "out_of_scope",
+    "question": "What is the speed of light in a vacuum?",
+    "expected_answer": null
   },
   {
-    "_id": "5a85a2845542997175ce1fe1",
-    "question": "Are both Aloinopsis and Eriogonum ice plants?",
-    "answer": "no",
-    "type": "comparison",
-    "level": "hard"
+    "type": "out_of_scope",
+    "question": "Who painted the Mona Lisa?",
+    "expected_answer": null
   },
   {
-    "_id": "5a7a633a55429941d65f2609",
-    "question": "Who was born last, Dave Peverett or Jang Hyun-seung?",
-    "answer": "Jang Hyun-seung",
-    "type": "comparison",
-    "level": "hard"
+    "type": "out_of_scope",
+    "question": "What is the highest mountain peak in the world?",
+    "expected_answer": null
   },
   {
-    "_id": "5a8de5d55542995085b3734d",
-    "question": "Are Even and Incubus known for their skill in classical music?",
-    "answer": "no",
-    "type": "comparison",
-    "level": "hard"
+    "type": "out_of_scope",
+    "question": "How many planets are in our solar system?",
+    "expected_answer": null
   },
   {
-    "_id": "5ae7edee554299540e5a56ad",
-    "question": "The Church of the Guanche People was founded in the city that is on the most populated island of what larger area?",
-    "answer": "Macaronesia",
-    "type": "bridge",
-    "level": "hard"
+    "type": "out_of_scope",
+    "question": "What is the currency of Japan?",
+    "expected_answer": null
   },
   {
-    "_id": "5ac2659b55429963665199a1",
-    "question": "How many laps did Harry Prowell run during the 10,000 metres race at the 1967 Pan American Games?",
-    "answer": "25 laps",
-    "type": "bridge",
-    "level": "hard"
+    "type": "out_of_scope",
+    "question": "Who wrote the novel 'To Kill a Mockingbird'?",
+    "expected_answer": null
   },
   {
-    "_id": "5a8a575a554299515336136e",
-    "question": "Rynella is an unincorporated community named after the daughters of a conservationist who presided of the maker of a brand of hot sauce made from vinegar, salt and what kind of peppers? ",
-    "answer": "tabasco peppers",
-    "type": "bridge",
-    "level": "hard"
+    "type": "paraphrase",
+    "question": "Which Super Bowl XXXIV winning team ended their 1999 regular season with what record?",
+    "expected_answer": "a record of 13–3"
   },
   {
-    "_id": "5ac3090d5542990b17b154fc",
-    "question": "Operalia, The World Opera Competition helped launch the career of an operatic soprano of what nationality?",
-    "answer": "Bulgarian",
-    "type": "bridge",
-    "level": "hard"
+    "type": "paraphrase",
+    "question": "The deadly incident in Oakland, California on April 2, 2012 had fewer casualties than the October 1, 2015 shooting that occurred in which state?",
+    "expected_answer": "Oregon"
   },
   {
-    "_id": "5adbe1b355429944faac23a0",
-    "question": "Who wrote shorter stories, Raymond Carver or Lydia Davis?",
-    "answer": "Lydia Davis",
-    "type": "comparison",
-    "level": "hard"
+    "type": "paraphrase",
+    "question": "At the 2013 71st Golden Globe Awards for television, what did Breaking Bad, the police comedy Brooklyn Nine-Nine and American Hustle accomplish?",
+    "expected_answer": "multiple awards"
   },
   {
-    "_id": "5a7730015542994aec3b7210",
-    "question": "Which TV series, written by the creators of Robocalypse, is set in Bikini Bottom?",
-    "answer": "SpongeBob SquarePants",
-    "type": "bridge",
-    "level": "hard"
+    "type": "paraphrase",
+    "question": "Spirit Halloween LLC was acquired in 1999 by a shopping mall retailer that operates how many locations across the United States and Canada?",
+    "expected_answer": "over 600 stores"
   },
   {
-    "_id": "5a88e75c5542993b751ca8c7",
-    "question": "Which of the following buildings was designed by SHoP Architects: 247 Cherry or General Motors Building?",
-    "answer": "247 Cherry",
-    "type": "comparison",
-    "level": "hard"
+    "type": "paraphrase",
+    "question": "Bruce Spizer is an authority on which group, recognized as the most impactful band of the rock era?",
+    "expected_answer": "The Beatles"
   },
   {
-    "_id": "5a844fd35542990548d0b274",
-    "question": "What occupation did Nicholas Christopher and Roger Ebert share?",
-    "answer": "author",
-    "type": "comparison",
-    "level": "hard"
+    "type": "paraphrase",
+    "question": "Salisbury Woodland Gardens connects a zoo to a park that was designed and constructed under whose supervision?",
+    "expected_answer": "Thomas Mawson"
   },
   {
-    "_id": "5abbcfaf5542993f40c73ba9",
-    "question": "Nicole Gordon won a silver medal with Sara Petersen int he women's doubles at a competition held in what city?",
-    "answer": "Manchester",
-    "type": "bridge",
-    "level": "hard"
+    "type": "paraphrase",
+    "question": "Randall Cunningham II played multiple sports at a high school situated in which Nevada city?",
+    "expected_answer": "Summerlin"
   },
   {
-    "_id": "5a85ee635542994775f606b4",
-    "question": "Which lake is located further south, Dal Lake or Waterton Lake?",
-    "answer": "Dal Lake",
-    "type": "comparison",
-    "level": "hard"
+    "type": "paraphrase",
+    "question": "Who served as executive producer for the movie featuring a Jerry Goldsmith musical score?",
+    "expected_answer": "Ronald Shusett"
   },
   {
-    "_id": "5adf75e35542993344016c98",
-    "question": "What American horror film directed by Sidney J. Furie was based off an alleged haunting which occurred in 1974 at Culver City, California?",
-    "answer": "The Entity",
-    "type": "bridge",
-    "level": "hard"
+    "type": "paraphrase",
+    "question": "Which ethnic group that established settlements in Canada during the 17th century took part in the conflict with Irish Catholic immigrants known as the Shiners' War?",
+    "expected_answer": "French Canadians"
   },
   {
-    "_id": "5ac325495542995ef918c12e",
-    "question": "Which region of Ghana was the city where Akrofuom is located? ",
-    "answer": "Ashanti Region of Ghana",
-    "type": "bridge",
-    "level": "hard"
+    "type": "paraphrase",
+    "question": "The golfer who holds the Argentine PGA Championship record has claimed victory in how many tournaments across the globe?",
+    "expected_answer": "230"
   },
   {
-    "_id": "5ac3bab155429939154138fb",
-    "question": "The House of Hanover held the British throne until after Victoria's death, when it was past to the dynasty that ruled which duchy?",
-    "answer": "Ernestine",
-    "type": "bridge",
-    "level": "hard"
+    "type": "paraphrase",
+    "question": "Johnny Galecki appeared in which 1997 American mystery crime movie?",
+    "expected_answer": "Suicide Kings"
   },
   {
-    "_id": "5a8bd4d65542997f31a41dd8",
-    "question": "Are both American Zeitgeist and Michael Jackson's This Is It documentary films about entertainment?",
-    "answer": "no",
-    "type": "comparison",
-    "level": "hard"
+    "type": "paraphrase",
+    "question": "What is the complete name of the viral lung infection that Yi Guan's research work helped prevent from spreading?",
+    "expected_answer": "severe acute respiratory syndrome"
   }
 ]
