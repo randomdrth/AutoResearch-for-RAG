@@ -1,0 +1,252 @@
+[
+  {
+    "type": "multi_hop",
+    "question": "What was the birth year of the actor who played Jack McPhee on The WB drama series that also featured a character named Kyle Brody in a supernatural drama?",
+    "expected_answer": "1972"
+  },
+  {
+    "type": "multi_hop",
+    "question": "Which position did Steven Kenneth Galson hold from October 2007 to October 2009, and what company does he currently work for as Senior Vice President?",
+    "expected_answer": "acting Surgeon General of the United States; Amgen"
+  },
+  {
+    "type": "multi_hop",
+    "question": "The lead vocalist who wrote 'All Join Hands' also co-wrote this song with which bassist from the same British rock band?",
+    "expected_answer": "Jim Lea"
+  },
+  {
+    "type": "multi_hop",
+    "question": "What was the peak chart position in the UK for the song by Slade that was produced by John Punter and stayed on the charts for ten weeks?",
+    "expected_answer": "No. 15"
+  },
+  {
+    "type": "multi_hop",
+    "question": "The Teen Titans animated series was developed by David Slack and featured voice actors including the person who voiced which main character alongside Scott Menville?",
+    "expected_answer": "Teen Titans characters"
+  },
+  {
+    "type": "multi_hop",
+    "question": "What year range did the left-wing uprisings against the Bolsheviks span, starting after the October Revolution and ending around what year?",
+    "expected_answer": "1918 to around 1924"
+  },
+  {
+    "type": "multi_hop",
+    "question": "The film director born in Rockville, Connecticut in 1895 was married to which actress from 1941-44, whom he also directed?",
+    "expected_answer": "Gloria Dickson"
+  },
+  {
+    "type": "multi_hop",
+    "question": "What television series was adapted from the book 'Please Don't Eat the Daisies' that starred Patricia Crowley, and who were the stars of the original film adaptation?",
+    "expected_answer": "Doris Day and David Niven"
+  },
+  {
+    "type": "multi_hop",
+    "question": "The reality show 'The Joe Schmo Show' premiered on Spike in 2003 and had its third season premiere in what year, and who were its creators?",
+    "expected_answer": "2013; Paul Wernick and Rhett Reese"
+  },
+  {
+    "type": "multi_hop",
+    "question": "What is the seating capacity of the arena named after E. Claiborne Robins Sr. that opened in 1972 and hosts University of Richmond basketball?",
+    "expected_answer": "7,201"
+  },
+  {
+    "type": "multi_hop",
+    "question": "The song 'Something to Talk About' by Badly Drawn Boy peaked at number 28 on the UK Singles Chart and was released in what year from what soundtrack?",
+    "expected_answer": "2002; About a Boy"
+  },
+  {
+    "type": "multi_hop",
+    "question": "King George V ruled from 1910 until his death in 1936, and the 2015 Queen's Birthday Honours for Queen Elizabeth II were announced on different dates in June for which three countries?",
+    "expected_answer": "New Zealand, Australia, and the United Kingdom"
+  },
+  {
+    "type": "multi_hop",
+    "question": "The 1939 PGA Championship was won by Henry Picard, who had previously won which major tournament in 1938, and who did he defeat in the final?",
+    "expected_answer": "the Masters; Byron Nelson"
+  },
+  {
+    "type": "multi_hop",
+    "question": "The online series 'Live from Daryl's House' was first created in 2007 and features Daryl Hall performing at his home in what New York location?",
+    "expected_answer": "Millerton, New York"
+  },
+  {
+    "type": "ambiguous",
+    "question": "What was the first diplomatic mission in the United Kingdom?",
+    "expected_answer": "Australia House"
+  },
+  {
+    "type": "ambiguous",
+    "question": "Who was the main author of the data analysis package?",
+    "expected_answer": "Wes McKinney"
+  },
+  {
+    "type": "ambiguous",
+    "question": "When will the next presidential election be held?",
+    "expected_answer": "November 3, 2020"
+  },
+  {
+    "type": "ambiguous",
+    "question": "Which director is best known for their Academy Award nominated documentary?",
+    "expected_answer": "Heidi Ewing"
+  },
+  {
+    "type": "ambiguous",
+    "question": "What is the traditional oil lamp used by Arctic peoples?",
+    "expected_answer": "qulliq"
+  },
+  {
+    "type": "ambiguous",
+    "question": "Who created the British television puppet character?",
+    "expected_answer": "David Claridge"
+  },
+  {
+    "type": "ambiguous",
+    "question": "What type of plant was successfully regenerated from ancient frozen samples?",
+    "expected_answer": "Silene stenophylla"
+  },
+  {
+    "type": "ambiguous",
+    "question": "Which rock singer had a number one hit on the Album Rock Tracks chart?",
+    "expected_answer": "Robert Plant"
+  },
+  {
+    "type": "ambiguous",
+    "question": "Who was the lead vocalist and guitarist in Ippu-Do?",
+    "expected_answer": "Masami Tsuchiya"
+  },
+  {
+    "type": "ambiguous",
+    "question": "What is the only African member of the grevilleoid subfamily?",
+    "expected_answer": "Brabejum stellatifolium"
+  },
+  {
+    "type": "ambiguous",
+    "question": "Who played the lead role in the Tamil action film based on an American movie?",
+    "expected_answer": "Sundar C."
+  },
+  {
+    "type": "ambiguous",
+    "question": "What commission was developed to increase cooperation between two countries?",
+    "expected_answer": "Gore-Chernomyrdin Commission"
+  },
+  {
+    "type": "out_of_scope",
+    "question": "What is the current price of Bitcoin in US dollars?",
+    "expected_answer": null
+  },
+  {
+    "type": "out_of_scope",
+    "question": "How do you prepare a traditional Italian carbonara recipe?",
+    "expected_answer": null
+  },
+  {
+    "type": "out_of_scope",
+    "question": "What are the symptoms of COVID-19?",
+    "expected_answer": null
+  },
+  {
+    "type": "out_of_scope",
+    "question": "Who won the 2022 FIFA World Cup?",
+    "expected_answer": null
+  },
+  {
+    "type": "out_of_scope",
+    "question": "What is the capital city of Australia?",
+    "expected_answer": null
+  },
+  {
+    "type": "out_of_scope",
+    "question": "How many chromosomes do humans have?",
+    "expected_answer": null
+  },
+  {
+    "type": "out_of_scope",
+    "question": "What is the formula for calculating compound interest?",
+    "expected_answer": null
+  },
+  {
+    "type": "out_of_scope",
+    "question": "Who invented the telephone?",
+    "expected_answer": null
+  },
+  {
+    "type": "out_of_scope",
+    "question": "What is the weather forecast for tomorrow in London?",
+    "expected_answer": null
+  },
+  {
+    "type": "out_of_scope",
+    "question": "How do you change a car tire?",
+    "expected_answer": null
+  },
+  {
+    "type": "out_of_scope",
+    "question": "What programming language should I learn first?",
+    "expected_answer": null
+  },
+  {
+    "type": "out_of_scope",
+    "question": "What are the health benefits of meditation?",
+    "expected_answer": null
+  },
+  {
+    "type": "paraphrase",
+    "question": "In which city are both the Nusretiye Clock Tower and the Eski Imaret Mosque located?",
+    "expected_answer": "Istanbul, Turkey"
+  },
+  {
+    "type": "paraphrase",
+    "question": "What is the moniker given to the city that houses Darling's Waterfront Pavilion?",
+    "expected_answer": "\"Queen City\""
+  },
+  {
+    "type": "paraphrase",
+    "question": "Between Marsilea and Brabejum, which genus contains a greater number of individual plant species?",
+    "expected_answer": "Marsilea"
+  },
+  {
+    "type": "paraphrase",
+    "question": "In what location is the multinational corporation established by Robert Smith based?",
+    "expected_answer": "Golden Valley, Minnesota,"
+  },
+  {
+    "type": "paraphrase",
+    "question": "What British musician created both \"See Yourself\" and \"Within You Without You\"?",
+    "expected_answer": "George Harrison"
+  },
+  {
+    "type": "paraphrase",
+    "question": "During the 2017–18 season, Wigan Athletic F.C. will participate in which league cup that goes by what sponsored name?",
+    "expected_answer": "Carabao Cup"
+  },
+  {
+    "type": "paraphrase",
+    "question": "What Hawaiian location, whose name translates to \"reddish water,\" was famous for Butch Van Artsdalen surfing its 25-foot waves?",
+    "expected_answer": "Waimea Bay"
+  },
+  {
+    "type": "paraphrase",
+    "question": "Which individual is credited with creating the documentary television series adapted from science historian James Burke's book?",
+    "expected_answer": "James Burke"
+  },
+  {
+    "type": "paraphrase",
+    "question": "The author of Armageddon in Retrospect gained fame primarily for which 1969 satirical novel?",
+    "expected_answer": "Slaughterhouse-Five"
+  },
+  {
+    "type": "paraphrase",
+    "question": "What coastal region lies on the southern border of the medieval castle in Dirleton, East Lothian, Scotland?",
+    "expected_answer": "Yellowcraig"
+  },
+  {
+    "type": "paraphrase",
+    "question": "What is the chemical formula (ON)CHOH associated with in shellite's composition?",
+    "expected_answer": "picric acid"
+  },
+  {
+    "type": "paraphrase",
+    "question": "Between Erika Jayne and Marco Da Silva, who came into the world earlier?",
+    "expected_answer": "Erika Jayne"
+  }
+]
