@@ -1,252 +1,352 @@
 [
   {
-    "type": "multi_hop",
-    "question": "What was the birth year of the actor who played Jack McPhee on The WB drama series that also featured a character named Kyle Brody in a supernatural drama?",
-    "expected_answer": "1972"
+    "_id": "5ac406c155429919431738fc",
+    "question": "What are both Caleb Shomo and Brian Welch?",
+    "answer": "singer",
+    "type": "comparison",
+    "level": "hard"
   },
   {
-    "type": "multi_hop",
-    "question": "Which position did Steven Kenneth Galson hold from October 2007 to October 2009, and what company does he currently work for as Senior Vice President?",
-    "expected_answer": "acting Surgeon General of the United States; Amgen"
+    "_id": "5a79d2fe5542994f819ef0c3",
+    "question": "Who was born first, Aleksandr Ivanovsky or Arthur Lubin?",
+    "answer": "Aleksandr Ivanovsky",
+    "type": "comparison",
+    "level": "hard"
   },
   {
-    "type": "multi_hop",
-    "question": "The lead vocalist who wrote 'All Join Hands' also co-wrote this song with which bassist from the same British rock band?",
-    "expected_answer": "Jim Lea"
+    "_id": "5a7133565542994082a3e65c",
+    "question": "What Kentucky county has a population of 60,316 and features the Lake Louisvilla neighborhood?",
+    "answer": "Oldham County",
+    "type": "bridge",
+    "level": "hard"
   },
   {
-    "type": "multi_hop",
-    "question": "What was the peak chart position in the UK for the song by Slade that was produced by John Punter and stayed on the charts for ten weeks?",
-    "expected_answer": "No. 15"
+    "_id": "5a728dc65542992359bc30ef",
+    "question": "What fellow Turkish footballer did Darko Kova\u010devi\u0107 form an offensive partnership with during his tenure at Real Sociedad?",
+    "answer": "Nihat Kahveci",
+    "type": "bridge",
+    "level": "hard"
   },
   {
-    "type": "multi_hop",
-    "question": "The Teen Titans animated series was developed by David Slack and featured voice actors including the person who voiced which main character alongside Scott Menville?",
-    "expected_answer": "Teen Titans characters"
+    "_id": "5ade8b2655429975fa854eff",
+    "question": "What is the nickname of this American retired airline captain celebrated for his water landing with Jeffrey Skiles, after a bird strike and being unable to reach an airport?",
+    "answer": "Sully",
+    "type": "bridge",
+    "level": "hard"
   },
   {
-    "type": "multi_hop",
-    "question": "What year range did the left-wing uprisings against the Bolsheviks span, starting after the October Revolution and ending around what year?",
-    "expected_answer": "1918 to around 1924"
+    "_id": "5a7f68365542994857a7672e",
+    "question": "Which band was formed at an earlier date, Unwritten Law or Jon Spencer Blues Explosion?",
+    "answer": "Unwritten Law",
+    "type": "comparison",
+    "level": "hard"
   },
   {
-    "type": "multi_hop",
-    "question": "The film director born in Rockville, Connecticut in 1895 was married to which actress from 1941-44, whom he also directed?",
-    "expected_answer": "Gloria Dickson"
+    "_id": "5a7a9b9a5542990198eaf160",
+    "question": "When was the Chinese American electronic musician and singer who collaborated on the album I Remember born?",
+    "answer": "1989",
+    "type": "bridge",
+    "level": "hard"
   },
   {
-    "type": "multi_hop",
-    "question": "What television series was adapted from the book 'Please Don't Eat the Daisies' that starred Patricia Crowley, and who were the stars of the original film adaptation?",
-    "expected_answer": "Doris Day and David Niven"
+    "_id": "5a86458b5542991e771815ec",
+    "question": "What is the population of the city where the Akademisches Kunstmuseum is?",
+    "answer": "300,000",
+    "type": "bridge",
+    "level": "hard"
   },
   {
-    "type": "multi_hop",
-    "question": "The reality show 'The Joe Schmo Show' premiered on Spike in 2003 and had its third season premiere in what year, and who were its creators?",
-    "expected_answer": "2013; Paul Wernick and Rhett Reese"
+    "_id": "5ac079e9554299294b218fff",
+    "question": "What organization does Rosyth Dockyard and Queen Elizabeth-class aircraft carrier have in common?",
+    "answer": "Navy",
+    "type": "bridge",
+    "level": "hard"
   },
   {
-    "type": "multi_hop",
-    "question": "What is the seating capacity of the arena named after E. Claiborne Robins Sr. that opened in 1972 and hosts University of Richmond basketball?",
-    "expected_answer": "7,201"
+    "_id": "5ac2758b55429963665199c3",
+    "question": "The organization that Nicolae Titulescu served two terms as president was founded on what date?",
+    "answer": "10 January 1920",
+    "type": "bridge",
+    "level": "hard"
   },
   {
-    "type": "multi_hop",
-    "question": "The song 'Something to Talk About' by Badly Drawn Boy peaked at number 28 on the UK Singles Chart and was released in what year from what soundtrack?",
-    "expected_answer": "2002; About a Boy"
+    "_id": "5a7a77425542995eb53be83e",
+    "question": "Who has released more solo albums, Nick Carter or Brady Seals?",
+    "answer": "Brady Seals",
+    "type": "comparison",
+    "level": "hard"
   },
   {
-    "type": "multi_hop",
-    "question": "King George V ruled from 1910 until his death in 1936, and the 2015 Queen's Birthday Honours for Queen Elizabeth II were announced on different dates in June for which three countries?",
-    "expected_answer": "New Zealand, Australia, and the United Kingdom"
+    "_id": "5ae694a15542991bbc976141",
+    "question": "Why is Minister Pool important to Black Country and the West Midlands in England?",
+    "answer": "defence of the Cathedral",
+    "type": "bridge",
+    "level": "hard"
   },
   {
-    "type": "multi_hop",
-    "question": "The 1939 PGA Championship was won by Henry Picard, who had previously won which major tournament in 1938, and who did he defeat in the final?",
-    "expected_answer": "the Masters; Byron Nelson"
+    "_id": "5ac370ce5542995ef918c18c",
+    "question": "Are Southwest Florida International Airport and Henry E. Rohlsen Airport both in Florida?",
+    "answer": "no",
+    "type": "comparison",
+    "level": "hard"
   },
   {
-    "type": "multi_hop",
-    "question": "The online series 'Live from Daryl's House' was first created in 2007 and features Daryl Hall performing at his home in what New York location?",
-    "expected_answer": "Millerton, New York"
+    "_id": "5a7f53ff5542992097ad2f17",
+    "question": "In addition to the best known comic servant from Commedia dell'arte, who else is featured in La Surprise de l'amour?",
+    "answer": "Columbine",
+    "type": "bridge",
+    "level": "hard"
   },
   {
-    "type": "ambiguous",
-    "question": "What was the first diplomatic mission in the United Kingdom?",
-    "expected_answer": "Australia House"
+    "_id": "5ab6ba045542995eadef007e",
+    "question": "Dorian Gray is the main character of what philosophical novel whose editor feared the story was indecent, and deleted roughly five hundred words before publication?",
+    "answer": "The Picture of Dorian Gray",
+    "type": "bridge",
+    "level": "hard"
   },
   {
-    "type": "ambiguous",
-    "question": "Who was the main author of the data analysis package?",
-    "expected_answer": "Wes McKinney"
+    "_id": "5ac31ad4554299741d48a1ee",
+    "question": "Are Ainslee's Magazine and The Australian Women's Weekly both monthly magazines?",
+    "answer": "yes",
+    "type": "comparison",
+    "level": "hard"
   },
   {
-    "type": "ambiguous",
-    "question": "When will the next presidential election be held?",
-    "expected_answer": "November 3, 2020"
+    "_id": "5a71166d5542994082a3e576",
+    "question": "Which battle occurred first, the Battle of Manila or the Battle of Guam?",
+    "answer": "Battle of Guam",
+    "type": "comparison",
+    "level": "hard"
   },
   {
-    "type": "ambiguous",
-    "question": "Which director is best known for their Academy Award nominated documentary?",
-    "expected_answer": "Heidi Ewing"
+    "_id": "5a7a15d35542996a35c170c4",
+    "question": "In what city does a Christian minister who won the singles title with Jan Kodes in the 1970 French Open currently reside?",
+    "answer": "Perth, Western Australia",
+    "type": "bridge",
+    "level": "hard"
   },
   {
-    "type": "ambiguous",
-    "question": "What is the traditional oil lamp used by Arctic peoples?",
-    "expected_answer": "qulliq"
+    "_id": "5a81028b55429938b614228a",
+    "question": "For which film did the Director team with NASA scientists, Aliens of the Deep or Poetry in Motion?",
+    "answer": "Aliens of the Deep",
+    "type": "comparison",
+    "level": "hard"
   },
   {
-    "type": "ambiguous",
-    "question": "Who created the British television puppet character?",
-    "expected_answer": "David Claridge"
+    "_id": "5a7aa0a55542990198eaf165",
+    "question": "Who was born first, Sathish Kalathil or Jacques Feyder?",
+    "answer": "Jacques Feyder",
+    "type": "comparison",
+    "level": "hard"
   },
   {
-    "type": "ambiguous",
-    "question": "What type of plant was successfully regenerated from ancient frozen samples?",
-    "expected_answer": "Silene stenophylla"
+    "_id": "5ab846e155429919ba4e229c",
+    "question": "Who won more Grand Slam doubles titles, Tony Roche or Jamie Murray?",
+    "answer": "Anthony Dalton Roche",
+    "type": "comparison",
+    "level": "hard"
   },
   {
-    "type": "ambiguous",
-    "question": "Which rock singer had a number one hit on the Album Rock Tracks chart?",
-    "expected_answer": "Robert Plant"
+    "_id": "5ade636255429939a52fe896",
+    "question": "Kresy, which roughly was a part of the land beyond the so-called Curson Line, was drawn for what reason?",
+    "answer": "demarcation line between the newly emerging states, the Second Polish Republic, and the Soviet Union",
+    "type": "bridge",
+    "level": "hard"
   },
   {
-    "type": "ambiguous",
-    "question": "Who was the lead vocalist and guitarist in Ippu-Do?",
-    "expected_answer": "Masami Tsuchiya"
+    "_id": "5a8e068b5542995085b37384",
+    "question": "Are Ferocactus and Silene both types of plant?",
+    "answer": "yes",
+    "type": "comparison",
+    "level": "hard"
   },
   {
-    "type": "ambiguous",
-    "question": "What is the only African member of the grevilleoid subfamily?",
-    "expected_answer": "Brabejum stellatifolium"
+    "_id": "5ab85b1755429916710eb041",
+    "question": "Which mathematician worked with algebraic geometry instead of probability theory, Askold Khovanskii or Andrey Kolmogorov?",
+    "answer": "Askold Georgievich Khovanskii",
+    "type": "comparison",
+    "level": "hard"
   },
   {
-    "type": "ambiguous",
-    "question": "Who played the lead role in the Tamil action film based on an American movie?",
-    "expected_answer": "Sundar C."
+    "_id": "5ab6d9b25542995eadef00c8",
+    "question": "Which opera has more acts, Don Quichotte or Tosca?",
+    "answer": "Don Quichotte",
+    "type": "comparison",
+    "level": "hard"
   },
   {
-    "type": "ambiguous",
-    "question": "What commission was developed to increase cooperation between two countries?",
-    "expected_answer": "Gore-Chernomyrdin Commission"
+    "_id": "5a835a265542992ef85e2281",
+    "question": "What industry does Edgar Selwyn and Chantal Akerman work in?",
+    "answer": "theater and film",
+    "type": "comparison",
+    "level": "hard"
   },
   {
-    "type": "out_of_scope",
-    "question": "What is the current price of Bitcoin in US dollars?",
-    "expected_answer": null
+    "_id": "5add016e5542992c1e3a250b",
+    "question": "What made the man who abolished the Consell in 1718 resume the throne?",
+    "answer": "upon his son's death",
+    "type": "bridge",
+    "level": "hard"
   },
   {
-    "type": "out_of_scope",
-    "question": "How do you prepare a traditional Italian carbonara recipe?",
-    "expected_answer": null
+    "_id": "5abb8afe5542993f40c73b1e",
+    "question": "Were both Roger Donaldson and Andr\u00e9 Cayatte french filmmakers?",
+    "answer": "no",
+    "type": "comparison",
+    "level": "hard"
   },
   {
-    "type": "out_of_scope",
-    "question": "What are the symptoms of COVID-19?",
-    "expected_answer": null
+    "_id": "5adea9ea55429939a52fe934",
+    "question": "What was the name of the fanzine that interviewed the Sex Pistols bassist when he was in the band \"The Flowers of Romance?\"",
+    "answer": "SKUM",
+    "type": "bridge",
+    "level": "hard"
   },
   {
-    "type": "out_of_scope",
-    "question": "Who won the 2022 FIFA World Cup?",
-    "expected_answer": null
+    "_id": "5a8f799d55429918e830d22d",
+    "question": "Which genus has the most number of species, Myrsine or Styrax?",
+    "answer": "Myrsine",
+    "type": "comparison",
+    "level": "hard"
   },
   {
-    "type": "out_of_scope",
-    "question": "What is the capital city of Australia?",
-    "expected_answer": null
+    "_id": "5abdff775542993f32c2a082",
+    "question": "At what theater is the composer and lyricist for the musical Big Fish a residential artist?",
+    "answer": "Ars Nova Theater",
+    "type": "bridge",
+    "level": "hard"
   },
   {
-    "type": "out_of_scope",
-    "question": "How many chromosomes do humans have?",
-    "expected_answer": null
+    "_id": "5abf12f25542997719eab667",
+    "question": "Are McFarland, USA and The Black Hole both sports films?",
+    "answer": "no",
+    "type": "comparison",
+    "level": "hard"
   },
   {
-    "type": "out_of_scope",
-    "question": "What is the formula for calculating compound interest?",
-    "expected_answer": null
+    "_id": "5abaee845542996606241696",
+    "question": "On February 25, 2017 tony Harrison lost the the International Boxing Federation light middleweight world title to a boxer from what state?",
+    "answer": "Maryland",
+    "type": "bridge",
+    "level": "hard"
   },
   {
-    "type": "out_of_scope",
-    "question": "Who invented the telephone?",
-    "expected_answer": null
+    "_id": "5a85a2845542997175ce1fe1",
+    "question": "Are both Aloinopsis and Eriogonum ice plants?",
+    "answer": "no",
+    "type": "comparison",
+    "level": "hard"
   },
   {
-    "type": "out_of_scope",
-    "question": "What is the weather forecast for tomorrow in London?",
-    "expected_answer": null
+    "_id": "5a7a633a55429941d65f2609",
+    "question": "Who was born last, Dave Peverett or Jang Hyun-seung?",
+    "answer": "Jang Hyun-seung",
+    "type": "comparison",
+    "level": "hard"
   },
   {
-    "type": "out_of_scope",
-    "question": "How do you change a car tire?",
-    "expected_answer": null
+    "_id": "5a8de5d55542995085b3734d",
+    "question": "Are Even and Incubus known for their skill in classical music?",
+    "answer": "no",
+    "type": "comparison",
+    "level": "hard"
   },
   {
-    "type": "out_of_scope",
-    "question": "What programming language should I learn first?",
-    "expected_answer": null
+    "_id": "5ae7edee554299540e5a56ad",
+    "question": "The Church of the Guanche People was founded in the city that is on the most populated island of what larger area?",
+    "answer": "Macaronesia",
+    "type": "bridge",
+    "level": "hard"
   },
   {
-    "type": "out_of_scope",
-    "question": "What are the health benefits of meditation?",
-    "expected_answer": null
+    "_id": "5ac2659b55429963665199a1",
+    "question": "How many laps did Harry Prowell run during the 10,000 metres race at the 1967 Pan American Games?",
+    "answer": "25 laps",
+    "type": "bridge",
+    "level": "hard"
   },
   {
-    "type": "paraphrase",
-    "question": "In which city are both the Nusretiye Clock Tower and the Eski Imaret Mosque located?",
-    "expected_answer": "Istanbul, Turkey"
+    "_id": "5a8a575a554299515336136e",
+    "question": "Rynella is an unincorporated community named after the daughters of a conservationist who presided of the maker of a brand of hot sauce made from vinegar, salt and what kind of peppers? ",
+    "answer": "tabasco peppers",
+    "type": "bridge",
+    "level": "hard"
   },
   {
-    "type": "paraphrase",
-    "question": "What is the moniker given to the city that houses Darling's Waterfront Pavilion?",
-    "expected_answer": "\"Queen City\""
+    "_id": "5ac3090d5542990b17b154fc",
+    "question": "Operalia, The World Opera Competition helped launch the career of an operatic soprano of what nationality?",
+    "answer": "Bulgarian",
+    "type": "bridge",
+    "level": "hard"
   },
   {
-    "type": "paraphrase",
-    "question": "Between Marsilea and Brabejum, which genus contains a greater number of individual plant species?",
-    "expected_answer": "Marsilea"
+    "_id": "5adbe1b355429944faac23a0",
+    "question": "Who wrote shorter stories, Raymond Carver or Lydia Davis?",
+    "answer": "Lydia Davis",
+    "type": "comparison",
+    "level": "hard"
   },
   {
-    "type": "paraphrase",
-    "question": "In what location is the multinational corporation established by Robert Smith based?",
-    "expected_answer": "Golden Valley, Minnesota,"
+    "_id": "5a7730015542994aec3b7210",
+    "question": "Which TV series, written by the creators of Robocalypse, is set in Bikini Bottom?",
+    "answer": "SpongeBob SquarePants",
+    "type": "bridge",
+    "level": "hard"
   },
   {
-    "type": "paraphrase",
-    "question": "What British musician created both \"See Yourself\" and \"Within You Without You\"?",
-    "expected_answer": "George Harrison"
+    "_id": "5a88e75c5542993b751ca8c7",
+    "question": "Which of the following buildings was designed by SHoP Architects: 247 Cherry or General Motors Building?",
+    "answer": "247 Cherry",
+    "type": "comparison",
+    "level": "hard"
   },
   {
-    "type": "paraphrase",
-    "question": "During the 2017–18 season, Wigan Athletic F.C. will participate in which league cup that goes by what sponsored name?",
-    "expected_answer": "Carabao Cup"
+    "_id": "5a844fd35542990548d0b274",
+    "question": "What occupation did Nicholas Christopher and Roger Ebert share?",
+    "answer": "author",
+    "type": "comparison",
+    "level": "hard"
   },
   {
-    "type": "paraphrase",
-    "question": "What Hawaiian location, whose name translates to \"reddish water,\" was famous for Butch Van Artsdalen surfing its 25-foot waves?",
-    "expected_answer": "Waimea Bay"
+    "_id": "5abbcfaf5542993f40c73ba9",
+    "question": "Nicole Gordon won a silver medal with Sara Petersen int he women's doubles at a competition held in what city?",
+    "answer": "Manchester",
+    "type": "bridge",
+    "level": "hard"
   },
   {
-    "type": "paraphrase",
-    "question": "Which individual is credited with creating the documentary television series adapted from science historian James Burke's book?",
-    "expected_answer": "James Burke"
+    "_id": "5a85ee635542994775f606b4",
+    "question": "Which lake is located further south, Dal Lake or Waterton Lake?",
+    "answer": "Dal Lake",
+    "type": "comparison",
+    "level": "hard"
   },
   {
-    "type": "paraphrase",
-    "question": "The author of Armageddon in Retrospect gained fame primarily for which 1969 satirical novel?",
-    "expected_answer": "Slaughterhouse-Five"
+    "_id": "5adf75e35542993344016c98",
+    "question": "What American horror film directed by Sidney J. Furie was based off an alleged haunting which occurred in 1974 at Culver City, California?",
+    "answer": "The Entity",
+    "type": "bridge",
+    "level": "hard"
   },
   {
-    "type": "paraphrase",
-    "question": "What coastal region lies on the southern border of the medieval castle in Dirleton, East Lothian, Scotland?",
-    "expected_answer": "Yellowcraig"
+    "_id": "5ac325495542995ef918c12e",
+    "question": "Which region of Ghana was the city where Akrofuom is located? ",
+    "answer": "Ashanti Region of Ghana",
+    "type": "bridge",
+    "level": "hard"
   },
   {
-    "type": "paraphrase",
-    "question": "What is the chemical formula (ON)CHOH associated with in shellite's composition?",
-    "expected_answer": "picric acid"
+    "_id": "5ac3bab155429939154138fb",
+    "question": "The House of Hanover held the British throne until after Victoria's death, when it was past to the dynasty that ruled which duchy?",
+    "answer": "Ernestine",
+    "type": "bridge",
+    "level": "hard"
   },
   {
-    "type": "paraphrase",
-    "question": "Between Erika Jayne and Marco Da Silva, who came into the world earlier?",
-    "expected_answer": "Erika Jayne"
+    "_id": "5a8bd4d65542997f31a41dd8",
+    "question": "Are both American Zeitgeist and Michael Jackson's This Is It documentary films about entertainment?",
+    "answer": "no",
+    "type": "comparison",
+    "level": "hard"
   }
 ]
