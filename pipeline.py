@@ -6,6 +6,7 @@ keyword arguments to override them at call time.
 """
 
 import os
+from typing import List, Optional
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -22,9 +23,45 @@ DEFAULT_EMBED_MODEL = "text-embedding-3-small"
 DEFAULT_LLM_MODEL = "gpt-4o-mini"
 
 # ---------------------------------------------------------------------------
-# Imports (deferred so config can be patched before import side-effects)
+# Prompt templates for generation
 # ---------------------------------------------------------------------------
-from typing import Optional
+PROMPT_TEMPLATES = {
+    "baseline": (
+        "Context information is below.\n"
+        "---------------------\n"
+        "{context_str}\n"
+        "---------------------\n"
+        "Given the context information and not prior knowledge, "
+        "answer the query.\n"
+        "Query: {query_str}\n"
+        "Answer: "
+    ),
+    "concise": (
+        "Context information is below.\n"
+        "---------------------\n"
+        "{context_str}\n"
+        "---------------------\n"
+        "Given the context information and not prior knowledge, "
+        "answer the query in 1-2 sentences maximum, directly and "
+        "without elaboration.\n"
+        "Query: {query_str}\n"
+        "Answer: "
+    ),
+    "chain_of_thought": (
+        "Context information is below.\n"
+        "---------------------\n"
+        "{context_str}\n"
+        "---------------------\n"
+        "Given the context information and not prior knowledge, "
+        "briefly reason step by step before giving the final answer.\n"
+        "Query: {query_str}\n"
+        "Answer: "
+    ),
+}
+
+# ---------------------------------------------------------------------------
+# Imports
+# ---------------------------------------------------------------------------
 import chromadb
 from llama_index.core import (
     VectorStoreIndex,
@@ -33,9 +70,9 @@ from llama_index.core import (
     StorageContext,
 )
 from llama_index.core.node_parser import SentenceSplitter
+from llama_index.core.prompts import PromptTemplate
 from llama_index.vector_stores.chroma import ChromaVectorStore
 from llama_index.embeddings.openai import OpenAIEmbedding
-from llama_index.core.llms import MockLLM
 from llama_index.llms.openai import OpenAI
 
 
@@ -106,7 +143,7 @@ class RAGPipeline:
 
     def load_documents(
         self,
-        passages: list[str],
+        passages: List[str],
         chunk_size: Optional[int] = None,
         chunk_overlap: Optional[int] = None,
     ) -> None:
@@ -140,6 +177,28 @@ class RAGPipeline:
         )
 
     # ------------------------------------------------------------------
+    # Reranker
+    # ------------------------------------------------------------------
+
+    def _build_reranker(self, top_n: int):
+        """
+        Return a postprocessor reranker.
+
+        Uses CohereRerank when COHERE_API_KEY is set and the package is
+        installed; falls back to LLMRerank (uses the global Settings.llm).
+        """
+        cohere_key = os.environ.get("COHERE_API_KEY")
+        if cohere_key:
+            try:
+                from llama_index.postprocessor.cohere_rerank import CohereRerank
+                return CohereRerank(api_key=cohere_key, top_n=top_n)
+            except ImportError:
+                pass  # fall through to LLMRerank
+
+        from llama_index.core.postprocessor import LLMRerank
+        return LLMRerank(top_n=top_n, choice_batch_size=5)
+
+    # ------------------------------------------------------------------
     # Query
     # ------------------------------------------------------------------
 
@@ -147,6 +206,8 @@ class RAGPipeline:
         self,
         question: str,
         top_k: int = DEFAULT_TOP_K,
+        prompt_variant: str = "baseline",
+        use_reranker: bool = False,
     ) -> dict:
         """
         Run a RAG query and return the synthesised answer plus source nodes.
@@ -156,7 +217,11 @@ class RAGPipeline:
         question : str
             The question to answer.
         top_k : int
-            Number of context chunks to retrieve.
+            Number of context chunks to retrieve (and keep after reranking).
+        prompt_variant : str
+            One of "baseline", "concise", "chain_of_thought".
+        use_reranker : bool
+            If True, retrieve top_k*2 candidates and rerank to top_k.
 
         Returns
         -------
@@ -165,7 +230,6 @@ class RAGPipeline:
             - ``contexts``: list[str] — retrieved passage chunks
         """
         if self._index is None:
-            # Reconstruct index from the persisted ChromaDB collection
             vector_store = ChromaVectorStore(
                 chroma_collection=self._chroma_collection
             )
@@ -176,12 +240,37 @@ class RAGPipeline:
                 vector_store, storage_context=storage_context
             )
 
-        query_engine = self._index.as_query_engine(similarity_top_k=top_k)
-        response = query_engine.query(question)
+        template_str = PROMPT_TEMPLATES.get(
+            prompt_variant, PROMPT_TEMPLATES["baseline"]
+        )
+        qa_template = PromptTemplate(template_str)
 
-        contexts = [
-            node.get_content() for node in response.source_nodes
-        ]
+        if use_reranker:
+            reranker = self._build_reranker(top_n=top_k)
+            rerank_engine = self._index.as_query_engine(
+                similarity_top_k=top_k * 2,
+                node_postprocessors=[reranker],
+                text_qa_template=qa_template,
+            )
+            try:
+                response = rerank_engine.query(question)
+            except (ValueError, IndexError):
+                # LLMRerank occasionally fails to parse the LLM's ranking
+                # output (e.g. returns passage text instead of a number).
+                # Fall back to standard retrieval so the run doesn't crash.
+                fallback_engine = self._index.as_query_engine(
+                    similarity_top_k=top_k,
+                    text_qa_template=qa_template,
+                )
+                response = fallback_engine.query(question)
+        else:
+            query_engine = self._index.as_query_engine(
+                similarity_top_k=top_k,
+                text_qa_template=qa_template,
+            )
+            response = query_engine.query(question)
+
+        contexts = [node.get_content() for node in response.source_nodes]
 
         return {
             "answer": str(response),

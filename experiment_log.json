@@ -1,0 +1,222 @@
+[
+  {
+    "iteration": 0,
+    "type": "baseline",
+    "config": {
+      "chunk_size": 512,
+      "chunk_overlap": 50,
+      "top_k": 3
+    },
+    "scores": {
+      "faithfulness": 0.8377,
+      "answer_relevancy": 0.7683,
+      "context_precision": 0.5614,
+      "context_recall": 0.6404,
+      "overall": 0.7019,
+      "rouge_l": 0.1449
+    },
+    "kept": true,
+    "reasoning": "Baseline — starting point.",
+    "timestamp": "2026-05-04T17:28:40.515211"
+  },
+  {
+    "iteration": 1,
+    "type": "experiment",
+    "proposal": {
+      "parameter": "top_k",
+      "old_value": 3,
+      "new_value": 5,
+      "reasoning": "Increasing top_k from 3 to 5 should improve context_precision and context_recall by providing more relevant context chunks for the model to work with."
+    },
+    "config": {
+      "chunk_size": 512,
+      "chunk_overlap": 50,
+      "top_k": 5
+    },
+    "scores": {
+      "faithfulness": 0.864,
+      "answer_relevancy": 0.7998,
+      "context_precision": 0.6067,
+      "context_recall": 0.7193,
+      "overall": 0.7475,
+      "rouge_l": 0.1583
+    },
+    "kept": true,
+    "reasoning": "Increasing top_k from 3 to 5 should improve context_precision and context_recall by providing more relevant context chunks for the model to work with.",
+    "timestamp": "2026-05-04T17:33:02.092353"
+  },
+  {
+    "iteration": 2,
+    "type": "experiment",
+    "proposal": {
+      "parameter": "top_k",
+      "old_value": 5,
+      "new_value": 7,
+      "reasoning": "Since increasing top_k from 3 to 5 improved the overall score significantly (0.7019 to 0.7475), further increasing to 7 should provide even more relevant context chunks to improve context_precision and context_recall."
+    },
+    "config": {
+      "chunk_size": 512,
+      "chunk_overlap": 50,
+      "top_k": 7
+    },
+    "scores": {
+      "faithfulness": 0.9057,
+      "answer_relevancy": 0.8034,
+      "context_precision": 0.6376,
+      "context_recall": 0.7763,
+      "overall": 0.7807,
+      "rouge_l": 0.1596
+    },
+    "kept": true,
+    "reasoning": "Since increasing top_k from 3 to 5 improved the overall score significantly (0.7019 to 0.7475), further increasing to 7 should provide even more relevant context chunks to improve context_precision and context_recall.",
+    "timestamp": "2026-05-04T17:41:26.428383"
+  },
+  {
+    "iteration": 3,
+    "type": "experiment",
+    "proposal": {
+      "parameter": "chunk_overlap",
+      "old_value": 50,
+      "new_value": 100,
+      "reasoning": "Increasing chunk overlap to 100 should improve context_precision (currently the lowest score at 0.6376) by ensuring better continuity and reducing information fragmentation between chunks."
+    },
+    "config": {
+      "chunk_size": 512,
+      "chunk_overlap": 100,
+      "top_k": 7
+    },
+    "scores": {
+      "faithfulness": 0.886,
+      "answer_relevancy": 0.8007,
+      "context_precision": 0.5759,
+      "context_recall": 0.7697,
+      "overall": 0.7581,
+      "rouge_l": 0.1659
+    },
+    "kept": false,
+    "reasoning": "Increasing chunk overlap to 100 should improve context_precision (currently the lowest score at 0.6376) by ensuring better continuity and reducing information fragmentation between chunks.",
+    "timestamp": "2026-05-04T17:46:32.835139"
+  },
+  {
+    "iteration": 4,
+    "type": "experiment",
+    "proposal": {
+      "parameter": "chunk_overlap",
+      "old_value": 50,
+      "new_value": 25,
+      "reasoning": "Since increasing chunk_overlap to 100 decreased the overall score, trying a smaller overlap of 25 may reduce redundancy while maintaining sufficient context continuity to improve the low context_precision score."
+    },
+    "config": {
+      "chunk_size": 512,
+      "chunk_overlap": 25,
+      "top_k": 7
+    },
+    "scores": {
+      "faithfulness": 0.891,
+      "answer_relevancy": 0.7792,
+      "context_precision": 0.554,
+      "context_recall": 0.7303,
+      "overall": 0.7386,
+      "rouge_l": 0.1662
+    },
+    "kept": false,
+    "reasoning": "Since increasing chunk_overlap to 100 decreased the overall score, trying a smaller overlap of 25 may reduce redundancy while maintaining sufficient context continuity to improve the low context_precision score.",
+    "timestamp": "2026-05-04T17:51:25.103678"
+  },
+  {
+    "iteration": 5,
+    "type": "experiment",
+    "proposal": {
+      "parameter": "chunk_size",
+      "old_value": 512,
+      "new_value": 1024,
+      "reasoning": "Since we've exhausted top_k and chunk_overlap variations with mixed results, increasing chunk_size to 1024 should provide richer context per chunk which may improve the low context_precision score of 0.6376."
+    },
+    "config": {
+      "chunk_size": 1024,
+      "chunk_overlap": 50,
+      "top_k": 7
+    },
+    "scores": {
+      "faithfulness": 0.8728,
+      "answer_relevancy": 0.8314,
+      "context_precision": 0.528,
+      "context_recall": 0.7199,
+      "overall": 0.738,
+      "rouge_l": 0.1574
+    },
+    "kept": false,
+    "reasoning": "Since we've exhausted top_k and chunk_overlap variations with mixed results, increasing chunk_size to 1024 should provide richer context per chunk which may improve the low context_precision score of 0.6376.",
+    "timestamp": "2026-05-04T17:56:30.675786"
+  },
+  {
+    "iteration": 6,
+    "type": "experiment",
+    "proposal": {
+      "parameter": "prompt_variant",
+      "old_value": "baseline",
+      "new_value": "chain_of_thought",
+      "reasoning": "Since we've exhausted the chunking and retrieval parameters with diminishing returns, introducing chain_of_thought prompting should improve answer_relevancy (0.8034) and context_precision (0.6376) by encouraging more structured reasoning and better utilization of the retrieved context."
+    },
+    "config": {
+      "chunk_size": 512,
+      "chunk_overlap": 50,
+      "top_k": 7,
+      "prompt_variant": "chain_of_thought"
+    },
+    "scores": {
+      "faithfulness": 0.806,
+      "answer_relevancy": 0.7784,
+      "context_precision": 0.5952,
+      "context_recall": 0.7676,
+      "overall": 0.7368,
+      "rouge_l": 0.0256
+    },
+    "scores_std": {
+      "faithfulness": 0.0094,
+      "answer_relevancy": 0.0296,
+      "context_precision": 0.0208,
+      "context_recall": 0.0076,
+      "overall": 0.0131,
+      "rouge_l": 0.0006
+    },
+    "kept": false,
+    "reasoning": "Since we've exhausted the chunking and retrieval parameters with diminishing returns, introducing chain_of_thought prompting should improve answer_relevancy (0.8034) and context_precision (0.6376) by encouraging more structured reasoning and better utilization of the retrieved context.",
+    "timestamp": "2026-05-05T16:09:55.057126"
+  },
+  {
+    "iteration": 7,
+    "type": "experiment",
+    "proposal": {
+      "parameter": "prompt_variant",
+      "old_value": "baseline",
+      "new_value": "concise",
+      "reasoning": "Since chain_of_thought prompting decreased performance, trying the concise prompt variant may improve context_precision and answer_relevancy by encouraging more focused responses that better utilize the retrieved context."
+    },
+    "config": {
+      "chunk_size": 512,
+      "chunk_overlap": 50,
+      "top_k": 7,
+      "prompt_variant": "concise"
+    },
+    "scores": {
+      "faithfulness": 0.8399,
+      "answer_relevancy": 0.7837,
+      "context_precision": 0.5868,
+      "context_recall": 0.7632,
+      "overall": 0.7434,
+      "rouge_l": 0.2041
+    },
+    "scores_std": {
+      "faithfulness": 0.0331,
+      "answer_relevancy": 0.0014,
+      "context_precision": 0.0153,
+      "context_recall": 0.0,
+      "overall": 0.0114,
+      "rouge_l": 0.0123
+    },
+    "kept": false,
+    "reasoning": "Since chain_of_thought prompting decreased performance, trying the concise prompt variant may improve context_precision and answer_relevancy by encouraging more focused responses that better utilize the retrieved context.",
+    "timestamp": "2026-05-05T16:31:46.334282"
+  }
+]

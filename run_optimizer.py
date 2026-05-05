@@ -13,6 +13,7 @@ from optimizer import (
     ADVERSARIAL_QUESTIONS_FILE,
     DEFAULT_CONFIG,
     EXPERIMENT_LOG_FILE,
+    N_SCORING_RUNS,
     run_optimizer,
 )
 
@@ -38,20 +39,24 @@ def main() -> None:
     passages, _ = load_hotpotqa(split=DATA_SPLIT, max_samples=MAX_DATA_LOAD)
     print(f"  {len(passages)} passages ready.\n")
 
+    print(f"Scoring each config {N_SCORING_RUNS} times (mean ± std).\n")
+
     result = run_optimizer(questions, passages, log_file=EXPERIMENT_LOG_FILE)
 
     # ------------------------------------------------------------------
     # Summary
     # ------------------------------------------------------------------
-    baseline = result["baseline_scores"]
-    best     = result["best_scores"]
+    baseline     = result["baseline_scores"]
+    best         = result["best_scores"]
+    best_std     = result["best_scores_std"]
 
-    print("\n" + "=" * 70)
+    print("\n" + "=" * 76)
     print("OPTIMIZATION COMPLETE")
-    print("=" * 70)
+    print("=" * 76)
     print(f"\nBaseline config : {result['baseline_config']}")
     print(f"Best config     : {result['best_config']}")
-    print(f"Total experiments run: {result['total_iterations']}\n")
+    print(f"Total experiments run: {result['total_iterations']}")
+    print(f"Scoring runs per config: {N_SCORING_RUNS}\n")
 
     metrics = [
         "faithfulness",
@@ -61,13 +66,20 @@ def main() -> None:
         "overall",
         "rouge_l",
     ]
-    header = f"{'Metric':<25} {'Baseline':>10} {'Best':>10} {'Delta':>10}"
+    header = (
+        f"{'Metric':<25} {'Baseline':>10} {'Best mean':>10} "
+        f"{'Best std':>10} {'Delta':>10}"
+    )
     print(header)
     print("-" * len(header))
     for m in metrics:
         b   = baseline.get(m, 0.0)
         bst = best.get(m, 0.0)
-        print(f"{m:<25} {b:>10.4f} {bst:>10.4f} {bst - b:>+10.4f}")
+        std = best_std.get(m, 0.0)
+        print(
+            f"{m:<25} {b:>10.4f} {bst:>10.4f} "
+            f"±{std:>8.4f} {bst - b:>+10.4f}"
+        )
 
 
 if __name__ == "__main__":
