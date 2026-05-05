@@ -1,0 +1,302 @@
+[
+  {
+    "type": "hotpot_heldout",
+    "question": "What is the name of the person that named Moltke Nunatak after the Chief of the German General staff that served from 1906 to 1914?",
+    "expected_answer": "Second German Antarctic Expedition of 1911–12 under Wilhelm Filchner.",
+    "hotpot_id": "5ac514d05542994611c8b372"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "Which brand of canned cooked meat by Hormel Foods Corporation is used to make a popular snack and lunch food in Hawaii?",
+    "expected_answer": "Spam",
+    "hotpot_id": "5a8f47a55542997ba9cb3219"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "In what century did this Native warrior and chief, whose brother Tenskwatawa led the Tippecanoe order of battle, become the primary leader of a large, multi tribal confederacy?",
+    "expected_answer": "nineteenth",
+    "hotpot_id": "5a87ab9b5542996e4f3088c2"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "What footballer beat out a German professional footballer despite his 18 clean sheets?",
+    "expected_answer": "Kurányi",
+    "hotpot_id": "5ae26c795542992decbdccfb"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "What American indie rock group first had Jesse Sandoval as the drummer and now has Jon Sortland on drums?",
+    "expected_answer": "The Shins",
+    "hotpot_id": "5a80aeef5542992097ad301a"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "What is the approximate population of the town near which Forward Operating Base Gibraltar was located ?",
+    "expected_answer": "approximately 14,000",
+    "hotpot_id": "5ac248fd55429951e9e68525"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "What census-designated place located in Nassau County, New York has as portions of it's territory, districts of Brian Curran, New York State assemblyman?",
+    "expected_answer": "Baldwin",
+    "hotpot_id": "5a77a44d5542997042120aba"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "What album did John Lennon release before the one that contained the song \"How?\"",
+    "expected_answer": "John Lennon/Plastic Ono Band",
+    "hotpot_id": "5a7a954855429941d65f26cd"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "What novella was \"Eyes Wide Shut,\" starring Vinessa Elizabeth Shaw, based on?",
+    "expected_answer": "\"Traumnovelle\" (\"Dream Story\")",
+    "hotpot_id": "5ab4355555429942dd415ee3"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "In which genus number of species are more, Lavatera or Oplismenus?",
+    "expected_answer": "Oplismenus",
+    "hotpot_id": "5ae207a65542994d89d5b317"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "What movies has Juno Temple starred in?",
+    "expected_answer": "She has appeared in films such as \" Black Mass\", \"The Other Boleyn Girl\", \"Wild Child\", \"Atonement\", \"Maleficent\", \"The Three Musketeers\" and \"The Dark Knight Rises\".",
+    "hotpot_id": "5a84b2995542994c784dda11"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "The 2017 European Short Course Swimming Championships will be held in an Arena which began construction when?",
+    "expected_answer": "26 June 2013",
+    "hotpot_id": "5ab3ddbc55429969a97a81dc"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "What season of Gilmore Girls featured an actress as a maid of honor who had also played the role of Winnie Foster?",
+    "expected_answer": "thirteenth",
+    "hotpot_id": "5a7b971255429927d897bff3"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "Wim Jonk manages Cruyff Football together with the footballer who is also currently manager of which team?",
+    "expected_answer": "Tel Aviv",
+    "hotpot_id": "5a7f392b55429934daa2fd26"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "Who directed a 2006 film where Ron Perkins character plays the manager of a hotel?",
+    "expected_answer": "Christopher Nolan",
+    "hotpot_id": "5a88a1bb5542997e5c09a64c"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "What is the english translation of the name of style of novel of which The Company is an example?",
+    "expected_answer": "novel with a key",
+    "hotpot_id": "5a8cefc155429941ae14df55"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "The English actor Kris Marshall played which character in the highly rated comedy-drama television series \"Death in Paradise\"?",
+    "expected_answer": "DI Humphrey Goodman",
+    "hotpot_id": "5ab9debb55429955dce3ed97"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "What was the name of the fanzine that interviewed the Sex Pistols bassist when he was in the band \"The Flowers of Romance?\"",
+    "expected_answer": "SKUM",
+    "hotpot_id": "5adea9ea55429939a52fe934"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "Both Ralph Bakshi and Béla Gaál had what roll in film making?",
+    "expected_answer": "film director",
+    "hotpot_id": "5a83041355429966c78a6ae8"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "The fourth episode The Simpsons' seventh season has what kind of theme?",
+    "expected_answer": "spiritual",
+    "hotpot_id": "5ae7281c5542991e8301cb69"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "What portrait hangs in the Smithsonian Institute along with what is known as the founder of nursing?",
+    "expected_answer": "Sister Anthony, S.C.",
+    "hotpot_id": "5a7ddd565542997cc2c474b2"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": " Park Seo-joon is best known for his role in a series that premiered on what month and day?",
+    "expected_answer": "May 22",
+    "hotpot_id": "5a83697e5542996488c2e441"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "In what year was the 1965 World Series MVP elected to the Baseball Hall of Fame?",
+    "expected_answer": "1972",
+    "hotpot_id": "5adf8c375542995534e8c7dd"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "Henry Hall is known for fighting in the Revolutionary War, and for being the first to successfully cultivate this food found in what type of bogs?",
+    "expected_answer": "acidic",
+    "hotpot_id": "5ae4c49a5542995dadf24400"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "what movie starring Melissa McCarthy features a character named Slimer?",
+    "expected_answer": "Ghostbusters: Answer the Call",
+    "hotpot_id": "5a865bbf5542991e77181615"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "Which services did Rock Nominees Ltd and  ISS A/S (Integrated Service Solutions) have in common?",
+    "expected_answer": "cleaning, catering and security",
+    "hotpot_id": "5a81c7d15542990a1d231ea9"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "The Atik Valide Mosque and Valens Aqueduct are found in what country?",
+    "expected_answer": "Turkey",
+    "hotpot_id": "5a72688c5542997f827839b2"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "What American actress starred in the 1996 television film \"Bastard Out of Carolina\" directed by Anjelica Huston?",
+    "expected_answer": "Jena Malone",
+    "hotpot_id": "5adfbd4655429942ec259b31"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "What American actor born in 1946 was in a 1996 martial arts film written, produced, and directed by Donald G. Jackson and is also the uncle of Charlie Sheen?",
+    "expected_answer": "Joseph \"Joe\" Estevez",
+    "hotpot_id": "5a7bf0d75542996dd594b85c"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "Is 4 World Trade Center or Trump Palace Condominiums higher?",
+    "expected_answer": "4 World Trade Center",
+    "hotpot_id": "5a8edb7f55429917b4a5bdeb"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "Who are the executive producer of the Adult Swim skit show that Odd Future had?",
+    "expected_answer": "Jeff Tremaine, Shanna Zablow, Dimitry Elyashkevich, Lance Bangs, Nick Weidenfeld and Keith Crofford",
+    "hotpot_id": "5adf123f5542995ec70e8f63"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "Where is Hawthornden Castle located relative to a castle 9 miles south of Edinburgh?",
+    "expected_answer": "downstream",
+    "hotpot_id": "5a8f495c5542997ba9cb3220"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "What is the name the Columbian film loosely based on a story about a dying child's dreams and hope first published in 1845 by Hans Christian Andersen?",
+    "expected_answer": "The Little Match Girl",
+    "hotpot_id": "5a73520c5542994cef4bc53f"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "What nymph may have a mother who fell in love with Narcissus?",
+    "expected_answer": "Iynx",
+    "hotpot_id": "5a8b71915542995d1e6f1393"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "Where is the headquarters for the advertising agency which is recognized for its work on a campaign for the founder of \"Complex\" magazine?",
+    "expected_answer": "New York",
+    "hotpot_id": "5a8cb4b2554299585d9e372a"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "who released the 2012 record of red?",
+    "expected_answer": "Big Machine Records",
+    "hotpot_id": "5a7335b55542992359bc3290"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "What was the Roud Folk Song Index of the nursery rhyme inspiring What Are Little Girls Made Of?",
+    "expected_answer": "821",
+    "hotpot_id": "5a77152355429966f1a36c2e"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "Which of the role of Cindy Robinson was an anime adaptation of the \"Blue Dragon\" video game series?",
+    "expected_answer": "Blue Dragon",
+    "hotpot_id": "5adfc11e55429942ec259b3a"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "What cuisine is described as a cultural blending of Mediterranean influences (such as those created by Italian and Spanish populations)?",
+    "expected_answer": "Argentine cuisine",
+    "hotpot_id": "5ab3c48755429969a97a81b8"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": " \"Prostitute\" is a song written by Axl Rose and Paul Tobias with additional work by an American guitarist has played in two different bands on a list of what? ",
+    "expected_answer": "100 Greatest Artists of Hard Rock",
+    "hotpot_id": "5a80e4b255429938b6142239"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "Rimo I and Passu Sar are both part of which mountain range?",
+    "expected_answer": "Karakoram mountain range",
+    "hotpot_id": "5a79fc8b5542994f819ef114"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "The Companions were the first of what type of cavalry?",
+    "expected_answer": "Shock troops",
+    "hotpot_id": "5ac23f98554299636651994b"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "When did the predecessor of The Eyes of Nye first air?",
+    "expected_answer": "September 10, 1993",
+    "hotpot_id": "5ab2c7ef554299545a2cfa73"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "In what year was Shin Hyun-joon in the successful South Korean comey sequel?",
+    "expected_answer": "2005",
+    "hotpot_id": "5ab797af5542995dae37e96c"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "What 1989-born Liverpool player was Jim Cassell responsible for developing?",
+    "expected_answer": "Daniel Sturridge",
+    "hotpot_id": "5a8add4c5542992d82986fb4"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "The king deposed in the Glorious Revolution of 1688 was supported by the grandson of what Viscount Barnewall?",
+    "expected_answer": "Nicholas Barnewall",
+    "hotpot_id": "5ab3d2b7554299233954ffb8"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "What is the name of a Sri Lankan political party associated with the aim of developing a national identity based on shared characteristics and preserving the nation's culture?",
+    "expected_answer": "The Sri Lanka Freedom Party",
+    "hotpot_id": "5a7755c65542993569682d54"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "Who was a Christian Evangelist and US prisoner of war survivor that was the basis for a film directed by Angelina Jolie?",
+    "expected_answer": "Louis \"Louie\" Zamperini",
+    "hotpot_id": "5ac245015542992f1f2b3829"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "Keene is an unincorporated community in Wabaunsee County, Kansas, in what federal republic composed of 50 states?",
+    "expected_answer": "The United States of America",
+    "hotpot_id": "5ab8ed305542991b5579f046"
+  },
+  {
+    "type": "hotpot_heldout",
+    "question": "Radha Jayalakshmi and the Priya sisters were both duo's in what music style? ",
+    "expected_answer": "Carnatic music",
+    "hotpot_id": "5ab576dc5542997d4ad1f13d"
+  }
+]
