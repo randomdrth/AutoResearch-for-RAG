@@ -21,8 +21,9 @@
 }
 
 \author{%
-  Yegan Metz\\
-  \textit{Independent Research}
+  Yegan Dhaivakumar \and Rushin Bhatt \and Sri Dhruth Rao Kesani\\[0.4em]
+  \small STAT GR5293 --- Generative AI using Large Language Models\\
+  \small Columbia University, Spring 2026
 }
 
 \date{May 2026}
@@ -94,49 +95,142 @@ visualization of the optimization trajectory.
 \end{itemize}
 
 % -----------------------------------------------------------------------
-\section{Background and Related Work}
+\section{Motivation}
 % -----------------------------------------------------------------------
 
-\subsection{Retrieval-Augmented Generation}
+RAG systems fail in production not because the underlying language model is too
+weak, but because the data pipeline feeding it is poorly configured. Manual
+tuning of chunk size, retrieval breadth, prompt templates, and reranking is
+slow, unreproducible, and does not scale beyond a handful of parameters.
+Karpathy's AutoResearch demonstrated that an LLM agent running overnight on a
+single GPU can find genuine improvements in neural network training ---
+improvements a methodical human would eventually find, but faster and without
+supervision. The same logic applies to RAG configuration: the search space is
+discrete and bounded, the fitness function (RAGAS) is automatic, and the
+keep/revert decision requires no human judgment. AutoRAGEvals tests whether this
+hypothesis holds for RAG pipelines specifically, where the optimization target
+is retrieval quality rather than training loss, and the config space spans
+document chunking, retrieval strategy, and generation behavior simultaneously.
 
-RAG~\cite{lewis2020rag} combines a retrieval component (vector similarity
-search) with a generative language model. Given a query, the retriever fetches
-relevant document chunks; the generator synthesizes an answer conditioned on
-both the query and retrieved context. Key hyperparameters include chunk size,
-chunk overlap, the number of retrieved chunks ($k$), the prompt template, and
-optional reranking.
+% -----------------------------------------------------------------------
+\section{Related Work}
+% -----------------------------------------------------------------------
 
-\subsection{RAGAS Evaluation}
+\subsection{RAG Architectural Improvements}
 
-RAGAS~\cite{es2023ragas} provides four LLM-based metrics without requiring
-human reference answers for some dimensions:
+A substantial body of work improves RAG by modifying the architecture itself.
+RAPTOR~\cite{sarthi2024raptor} builds a recursive summarization tree over the
+corpus so that queries can retrieve at different levels of abstraction.
+HyDE~\cite{gao2022precise} generates a hypothetical answer to the query and
+uses its embedding for retrieval rather than the raw query embedding.
+CRAG~\cite{yan2024corrective} adds a lightweight relevance classifier that
+decides whether to use retrieved context, discard it, or fall back to web
+search. Each of these is a one-time \emph{architectural} intervention: the
+designer selects the method, wires it into the pipeline, and deploys it. None
+treats RAG configuration as a \emph{continuous optimization problem} subject
+to iterative search. AutoRAGEvals is complementary: rather than changing the
+retrieval architecture, it automatically tunes the configuration of a fixed
+architecture (chunking, retrieval breadth, prompt variant, reranking) and
+could in principle be applied on top of any of these methods.
+
+\subsection{RAGAS: Automated RAG Evaluation}
+
+RAGAS~\cite{es2023ragas} addresses the core difficulty in evaluating RAG
+systems: ground-truth answers are available, but the correctness of retrieved
+context and the faithfulness of generated answers cannot be checked with simple
+string matching. RAGAS defines four LLM-as-judge metrics:
+
 \begin{description}[leftmargin=2em]
-  \item[Faithfulness] --- fraction of answer claims that are grounded in the
-    retrieved context (0--1).
-  \item[Answer Relevancy] --- cosine similarity between the generated answer and
-    the original question (embedding-based).
-  \item[Context Precision] --- proportion of retrieved chunks that are relevant
-    to the gold answer.
-  \item[Context Recall] --- proportion of gold-answer claims that can be
-    attributed to the retrieved context.
+  \item[Faithfulness] --- Each claim in the generated answer is verified against
+    the retrieved context by an LLM judge. The score is the fraction of claims
+    that are fully supported (0--1). High faithfulness means the answer does not
+    hallucinate beyond what was retrieved.
+  \item[Answer Relevancy] --- The judge generates several synthetic questions
+    from the answer, then computes the mean cosine similarity between their
+    embeddings and the original question embedding. High relevancy means the
+    answer actually addresses what was asked.
+  \item[Context Precision] --- Retrieved chunks are ranked by relevance to the
+    gold answer; precision at each rank is averaged. High context precision means
+    the most useful chunks appear earliest in the retrieved set.
+  \item[Context Recall] --- Each sentence in the gold answer is checked for
+    support in the retrieved context. High recall means the retrieved chunks
+    collectively cover the ground-truth answer.
 \end{description}
-We also track \textbf{ROUGE-L}~\cite{lin2004rouge} as a surface-level lexical
-overlap metric between the generated answer and the gold answer string.
 
-\subsection{HotpotQA}
+Because RAGAS uses LLM calls internally, the scores are \emph{stochastic}:
+repeated evaluations of the same (question, answer, context) triple can yield
+slightly different scores due to LLM temperature sampling. We observed
+per-config standard deviations of $\pm0.011$--$0.013$ on overall RAGAS across
+three runs in later iterations, comparable in magnitude to the keep/revert
+margins. This is the direct motivation for our three-run mean scoring: a single
+RAGAS evaluation is not a sufficiently reliable signal for keep/revert decisions
+when config differences are small.
 
-HotpotQA~\cite{yang2018hotpotqa} is a multi-hop question answering dataset
-requiring reasoning across multiple Wikipedia passages. We use the distractor
-dev split (7,405 questions) as our corpus source and optimization benchmark.
-Due to computational constraints, we index only 300 passages, which creates a
-retrieval coverage ceiling discussed in Section~\ref{sec:findings}.
+We also track \textbf{ROUGE-L}~\cite{lin2004rouge} as a secondary lexical
+overlap metric between generated and gold answers, but it does not influence
+optimization decisions.
 
-\subsection{Meta-Optimization with LLMs}
+\subsection{HotpotQA: Multi-Hop Question Answering}
 
-Recent work uses LLMs to optimize prompts and hyperparameters. AutoRAGEvals
-applies this paradigm to the full RAG pipeline, proposing changes one parameter
-at a time and using objective scores to accept or reject changes---analogous
-to coordinate descent with stochastic evaluation.
+HotpotQA~\cite{yang2018hotpotqa} is a Wikipedia-derived QA dataset specifically
+designed to require reasoning over two or more documents. Questions are collected
+in a \emph{distractor} setting: each question is paired with ten paragraphs, of
+which only two contain the supporting facts; the rest are adversarially selected
+distractors. This makes the dataset particularly challenging for retrieval
+systems, since the retriever must distinguish genuinely supporting passages from
+plausible-sounding but irrelevant ones. The multi-hop structure means that
+answering correctly often requires retrieving \emph{both} supporting passages,
+making retrieval breadth (\texttt{top\_k}) especially consequential---a property
+confirmed by our results. We use the distractor dev split (7,405 questions) as
+our corpus and evaluation source.
+
+\subsection{Karpathy's AutoResearch}
+
+AutoResearch~\cite{karpathy2026autoresearch}, released on March 7, 2026, gained
+over 21,000 GitHub stars within days of release. It proposes a three-file
+architecture for agent-driven scientific experimentation: an immutable evaluator
+(\texttt{prepare.py}) that sets up the fixed evaluation protocol, an
+agent-modifiable implementation file (\texttt{train.py}) that the LLM rewrites
+each cycle, and a human-authored direction file (\texttt{program.md}) that
+provides the research goal. The agent runs propose--train--evaluate cycles on a
+fixed 5-minute compute budget per iteration, keeping only changes that improve
+validation bits-per-byte (\texttt{val\_bpb}) --- a ratchet that prevents
+regression. AutoRAGEvals adapts this keep/revert ratchet pattern from neural
+architecture search to RAG hyperparameter optimization. The differences are
+significant: AutoRAGEvals operates on a discrete, bounded configuration space
+(five parameters with 2--3 values each) rather than continuous neural
+architecture modifications; uses multi-metric evaluation (RAGAS) rather than a
+single scalar loss; requires no GPU; and tests whether the pattern transfers to
+an information retrieval rather than a language modeling task.
+
+\subsection{Sengupta's AutoVoiceEvals}
+
+AutoVoiceEvals~\cite{sengupta2025autovoiceevals} applies the same keep/revert
+optimization pattern to voice agent system prompt optimization. An LLM
+iteratively rewrites the system prompt for a voice assistant, evaluating each
+version on a held-out conversation set and retaining only improvements.
+AutoRAGEvals extends this line of work from single-parameter prompt optimization
+to the multi-dimensional RAG configuration space: five parameters spanning
+document chunking (\texttt{chunk\_size}, \texttt{chunk\_overlap}), retrieval
+strategy (\texttt{top\_k}, \texttt{reranker}), and generation behavior
+(\texttt{prompt\_variant}) are jointly searchable. The richer config space
+requires the optimizer to balance exploration across qualitatively different
+dimensions, not just refine a single free-text artifact.
+
+\subsection{LLMs as Optimizers}
+
+Yang et al.~\cite{yang2024large} (ICLR 2024) demonstrate that LLMs can serve
+as general-purpose optimizers when given a natural-language description of the
+objective and a history of past (solution, score) pairs. The LLM generates new
+candidate solutions by reasoning about the trajectory, without access to
+gradients or an explicit model of the objective landscape. AutoRAGEvals
+instantiates this pattern in the RAG domain: Claude receives the full history
+of (config, RAGAS scores, keep/revert) tuples and proposes the next
+configuration as a structured JSON object. The fitness function is RAGAS overall
+score, computed automatically without human involvement. Our results confirm the
+core claim of Yang et al.: LLM-generated proposals are coherent with the
+observed score trajectory---Claude correctly exhausted retrieval improvements
+before moving to chunking and prompt parameters.
 
 % -----------------------------------------------------------------------
 \section{System Architecture}
@@ -604,6 +698,32 @@ In \textit{Text Summarization Branches Out}, pp.\ 74--81.
 Yang, C., Wang, X., Lu, Y., et al. (2024).
 Large language models as optimizers.
 In \textit{Proceedings of ICLR 2024}.
+
+\bibitem{karpathy2026autoresearch}
+Karpathy, A. (2026).
+\texttt{autoresearch}: An agent that runs experiments autonomously.
+GitHub repository, released March 7, 2026.
+\texttt{https://github.com/karpathy/autoresearch}.
+
+\bibitem{sengupta2025autovoiceevals}
+Sengupta, A. (2025).
+AutoVoiceEvals: Automated voice agent system prompt optimization.
+
+\bibitem{sarthi2024raptor}
+Sarthi, P., Abdullah, S., Tuli, A., Khanna, S., Goldie, A., and Manning, C.~D.
+(2024).
+RAPTOR: Recursive abstractive processing for tree-organized retrieval.
+In \textit{Proceedings of ICLR 2024}.
+
+\bibitem{gao2022precise}
+Gao, L., Ma, X., Lin, J., and Callan, J. (2022).
+Precise zero-shot dense retrieval without relevance labels.
+\textit{arXiv:2212.10496}.
+
+\bibitem{yan2024corrective}
+Yan, S.-Q., Gu, J.-C., Zhu, Y., and Ling, Z.-H. (2024).
+Corrective retrieval augmented generation.
+\textit{arXiv:2401.15884}.
 
 \end{thebibliography}
 
