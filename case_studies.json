@@ -1,0 +1,130 @@
+{
+  "source_file": "held_out_results.json",
+  "baseline_config": {
+    "chunk_size": 512,
+    "chunk_overlap": 50,
+    "top_k": 3,
+    "prompt_variant": "baseline",
+    "reranker": false
+  },
+  "best_config": {
+    "chunk_size": 512,
+    "chunk_overlap": 50,
+    "top_k": 7,
+    "prompt_variant": "baseline",
+    "reranker": false
+  },
+  "cases": [
+    {
+      "case": 1,
+      "label": "IMPROVED — answer got better",
+      "question_idx": 32,
+      "hotpot_id": "5a73520c5542994cef4bc53f",
+      "question": "What is the name the Columbian film loosely based on a story about a dying child's dreams and hope first published in 1845 by Hans Christian Andersen?",
+      "expected_answer": "The Little Match Girl",
+      "baseline": {
+        "answer": "The name of the Colombian film loosely based on a story about a dying child's dreams and hope first published in 1845 by Hans Christian Andersen is \"La niña de la mochila azul.\"",
+        "contexts": [
+          "“The Most Incredible Thing\" (Danish: \"Det Utroligste\" ) is a literary fairy tale by Danish poet and author Hans Christian Andersen (1805–1875).  The story is about a contest to find the most incredible thing and the wondrous consequences when the winner is chosen.  The tale was first published in an English translation by Horace Scudder, an American correspondent of Andersen's, in the United States in September 1870 before being published in the original Danish in Denmark in October 1870.  \"The Most Incredible Thing\" was the first of Andersen's tales to be published in Denmark during World War II.  Andersen considered the tale one of his best.",
+          "The Greek Princess and the Young Gardener is an Irish fairy tale collected by Patrick Kennedy in \"Fireside Stories of Ireland\".  Joseph Jacobs included it in \"More Celtic Fairy Tales\".",
+          "Motion pictures featuring Santa Claus abound and apparently constitute their own subgenre of the Christmas film genre.  Early films of Santa revolve around similar simple plots of Santa's Christmas Eve visit to children.  In 1897, in a short film called \"Santa Claus Filling Stockings\", Santa Claus is simply filling stockings from his pack of toys.  Another film called \"Santa Claus and the Children\" was made in 1898.  A year later, a film directed by George Albert Smith in titled \"Santa Claus\" (or \"The Visit from Santa Claus\" in the United Kingdom) was created.  In this picture, Santa Claus enters the room from the fireplace and proceeds to trim the tree.  He then fills the stockings that were previously hung on the mantle by the children.  After walking backward and surveying his work, he suddenly darts at the fireplace and disappears up the chimney.  \"Santa Claus' Visit\" in 1900 featured a scene with two little children kneeling at the feet of their mother and saying their prayers.  The mother tucks the children snugly in bed and leaves the room.  Santa Claus suddenly appears on the roof, just outside the children's bedroom window, and proceeds to enter the chimney, taking with him his bag of presents and a little hand sled for one of the children.  He goes down the chimney and suddenly appears in the children's room through the fireplace.  He distributes the presents and mysteriously causes the appearance of a Christmas tree laden with gifts.  The scene closes with the children waking up and running to the fireplace just too late to catch him by the legs.  A 1909 film by D. W. Griffith titled \"A Trap for Santa Claus\" shows children setting a trap to capture Santa Claus as he descends the chimney, but instead capture their father who abandoned them and their mother but tries to burglarize the house after he discovers she inherited a fortune.  A twenty-nine-minute 1925 silent film production titled \"Santa Claus\", by explorer/documentarian Frank E. Kleinschmidt, filmed partly in northern Alaska, feature Santa in his workshop, visiting his Eskimo neighbors, and tending his reindeer.  A year later, another movie titled \"Santa Claus\" was produced with sound on De Forest Phonofilm."
+        ],
+        "rouge_l": 0.0513
+      },
+      "best": {
+        "answer": "The name of the Colombian film loosely based on a story about a dying child's dreams and hope first published in 1845 by Hans Christian Andersen is \"The Little Match Girl.\"",
+        "contexts": [
+          "“The Most Incredible Thing\" (Danish: \"Det Utroligste\" ) is a literary fairy tale by Danish poet and author Hans Christian Andersen (1805–1875).  The story is about a contest to find the most incredible thing and the wondrous consequences when the winner is chosen.  The tale was first published in an English translation by Horace Scudder, an American correspondent of Andersen's, in the United States in September 1870 before being published in the original Danish in Denmark in October 1870.  \"The Most Incredible Thing\" was the first of Andersen's tales to be published in Denmark during World War II.  Andersen considered the tale one of his best.",
+          "The Greek Princess and the Young Gardener is an Irish fairy tale collected by Patrick Kennedy in \"Fireside Stories of Ireland\".  Joseph Jacobs included it in \"More Celtic Fairy Tales\".",
+          "Motion pictures featuring Santa Claus abound and apparently constitute their own subgenre of the Christmas film genre.  Early films of Santa revolve around similar simple plots of Santa's Christmas Eve visit to children.  In 1897, in a short film called \"Santa Claus Filling Stockings\", Santa Claus is simply filling stockings from his pack of toys.  Another film called \"Santa Claus and the Children\" was made in 1898.  A year later, a film directed by George Albert Smith in titled \"Santa Claus\" (or \"The Visit from Santa Claus\" in the United Kingdom) was created.  In this picture, Santa Claus enters the room from the fireplace and proceeds to trim the tree.  He then fills the stockings that were previously hung on the mantle by the children.  After walking backward and surveying his work, he suddenly darts at the fireplace and disappears up the chimney.  \"Santa Claus' Visit\" in 1900 featured a scene with two little children kneeling at the feet of their mother and saying their prayers.  The mother tucks the children snugly in bed and leaves the room.  Santa Claus suddenly appears on the roof, just outside the children's bedroom window, and proceeds to enter the chimney, taking with him his bag of presents and a little hand sled for one of the children.  He goes down the chimney and suddenly appears in the children's room through the fireplace.  He distributes the presents and mysteriously causes the appearance of a Christmas tree laden with gifts.  The scene closes with the children waking up and running to the fireplace just too late to catch him by the legs.  A 1909 film by D. W. Griffith titled \"A Trap for Santa Claus\" shows children setting a trap to capture Santa Claus as he descends the chimney, but instead capture their father who abandoned them and their mother but tries to burglarize the house after he discovers she inherited a fortune.  A twenty-nine-minute 1925 silent film production titled \"Santa Claus\", by explorer/documentarian Frank E. Kleinschmidt, filmed partly in northern Alaska, feature Santa in his workshop, visiting his Eskimo neighbors, and tending his reindeer.  A year later, another movie titled \"Santa Claus\" was produced with sound on De Forest Phonofilm.",
+          "\"A Man Has Dreams\" is a song from Walt Disney's film \"Mary Poppins\", written by Richard M. Sherman and Robert B. Sherman.  The song melody is a slowed down version of \"The Life I Lead\" which serves as Banks's leitmotif as he was fired.  In both the motion picture and the stage musical, the song is performed as a conversational duet between Bert, the chimney sweep (Dick Van Dyke) and George Banks (David Tomlinson).  It is operatic in nature, sung dialogue, and was highly unusual for a musical film of that era.  The song incorporates a reprise of \"A Spoonful of Sugar\" which is Mary Poppins's leitmotif.",
+          "The Collected Short Stories of Roald Dahl is a 1991 short story collection for adults by Roald Dahl.  The collection, containing tales of macabre malevolence, comprises many of Dahl's stories seen in the television series \"Tales of the Unexpected\" and previously collected in \"Someone Like You\" (1953), \"Kiss, Kiss\" (1960), \"Twenty-Nine Kisses from Roald Dahl\" (1969), \"Ppo poo face\" (1974), and \"\" (1989).",
+          "Jack and his Comrades is a short Irish fairy tale describing the title character's story of success with the help of his animal helpers, collected by folklorist Patrick Kennedy from a resident of County Wexford, Ireland, and published in \"Legendary Fictions of the Irish Celts\" (1866).  It was later reprinted, revised but only slightly, by Joseph Jacobs in his Celtic fairy tale compilation.",
+          "Roald Dahl: Collected Stories is a hardcover edition of short-stories by Roald Dahl for adults.  It was published in the US in October 2006 by Random House as part of the Everyman Library.  The present volume includes for the first time all the stories in chronological order as established by Dahl's biographer, Jeremy Treglown, in consultation with the Dahl estate.  A few of the short stories were not published chronologically in book form, but appeared later, collected in \"More Tales of the Unexpected\" (1980).  The collection contains all of the short stories published in the following collections:"
+        ],
+        "rouge_l": 0.2222
+      },
+      "rouge_l_delta": 0.1709,
+      "aggregate_ragas": {
+        "baseline_overall": 0.3237,
+        "best_overall": 0.3439,
+        "delta": 0.0202
+      },
+      "analysis": "With top_k=7, the pipeline retrieved 7 context chunks instead of 3, which happened to include a passage containing the answer. The baseline answer wandered or hallucinated (ROUGE-L 0.051), while the best config produced an answer with substantially more lexical overlap with the gold answer (ROUGE-L 0.222, Δ=+0.171). This illustrates the primary mechanism by which top_k=7 outperformed top_k=3: broader retrieval increases the probability of including the relevant passage."
+    },
+    {
+      "case": 2,
+      "label": "STAYED WRONG — both configs failed",
+      "question_idx": 2,
+      "hotpot_id": "5a87ab9b5542996e4f3088c2",
+      "question": "In what century did this Native warrior and chief, whose brother Tenskwatawa led the Tippecanoe order of battle, become the primary leader of a large, multi tribal confederacy?",
+      "expected_answer": "nineteenth",
+      "baseline": {
+        "answer": "Tecumseh became the primary leader of a large, multi-tribal confederacy in the early 19th century.",
+        "contexts": [
+          "Tecumseh's Confederacy was a group of Native Americans in the Old Northwest that began to form in the early 19th century around the teaching of Tenskwatawa (The Prophet).  The confederation grew over several years and came to include several thousand warriors.  Shawnee leader Tecumseh, the brother of The Prophet, developed into the leader of the group as early as 1808.  Deemed a threat to the United States, a preemptive strike against the confederation was launched resulting in the 1811 Battle of Tippecanoe.  Under Tecumseh's leadership, the confederation went to war with the United States during Tecumseh's War and the War of 1812.  Following the death of Tecumseh in 1813 the confederation fell apart.",
+          "Native American Shawnee warrior and chief, who became the primary leader of a large, multi-tribal confederacy in the early years of the nineteenth century.  Born in the Ohio Country (present-day Ohio), and growing up during the American Revolutionary War and the Northwest Indian War, Tecumseh was exposed to warfare and envisioned the establishment of an independent Indian nation east of the Mississippi River under British protection and worked to recruit additional members to his tribal confederacy from the southern United States.",
+          "The following units of the U.S. Army and state militia forces under Indiana Governor William Henry Harrison, fought against the Native American warriors of Tecumseh's Confederacy, led by Chief Tecumseh's brother, Tenskwatawa \"The Prophet\" at the battle of Tippecanoe on November 7, 1811."
+        ],
+        "rouge_l": 0.0
+      },
+      "best": {
+        "answer": "Tecumseh became the primary leader of a large, multi-tribal confederacy in the early 19th century.",
+        "contexts": [
+          "Tecumseh's Confederacy was a group of Native Americans in the Old Northwest that began to form in the early 19th century around the teaching of Tenskwatawa (The Prophet).  The confederation grew over several years and came to include several thousand warriors.  Shawnee leader Tecumseh, the brother of The Prophet, developed into the leader of the group as early as 1808.  Deemed a threat to the United States, a preemptive strike against the confederation was launched resulting in the 1811 Battle of Tippecanoe.  Under Tecumseh's leadership, the confederation went to war with the United States during Tecumseh's War and the War of 1812.  Following the death of Tecumseh in 1813 the confederation fell apart.",
+          "Native American Shawnee warrior and chief, who became the primary leader of a large, multi-tribal confederacy in the early years of the nineteenth century.  Born in the Ohio Country (present-day Ohio), and growing up during the American Revolutionary War and the Northwest Indian War, Tecumseh was exposed to warfare and envisioned the establishment of an independent Indian nation east of the Mississippi River under British protection and worked to recruit additional members to his tribal confederacy from the southern United States.",
+          "The following units of the U.S. Army and state militia forces under Indiana Governor William Henry Harrison, fought against the Native American warriors of Tecumseh's Confederacy, led by Chief Tecumseh's brother, Tenskwatawa \"The Prophet\" at the battle of Tippecanoe on November 7, 1811.",
+          "The Battle of Tippecanoe ( ) was fought on November 7, 1811, in what is now Battle Ground, Indiana, between American forces led by Governor William Henry Harrison of the Indiana Territory and Native American warriors associated with the Shawnee leader Tecumseh.  Tecumseh and his brother Tenskwatawa (commonly known as \"The Prophet\") were leaders of a confederacy of Native Americans from various tribes that opposed US expansion into Native territory.  As tensions and violence increased, Governor Harrison marched with an army of about 1,000 men to disperse the confederacy's headquarters at Prophetstown, near the confluence of the Tippecanoe and Wabash Rivers.",
+          "Tenskwatawa (also called Tenskatawa, Tenskwatawah, Tensquatawa or Lalawethika) (January 1775 – November 1836) was a Native American religious and political leader of the Shawnee tribe, known as the Prophet or the Shawnee Prophet.  He was a younger brother of Tecumseh, leader of the Shawnee.  In his early years Tenskwatawa was given the name Lalawethika (\"He Makes a Loud Noise\" or \"The Noise Maker\"), but he changed it around 1805 and transformed himself from a hapless, alcoholic youth into an influential spiritual leader.  Tenskwatawa denounced the Americans, calling them the offspring of the Evil Spirit, and lead a purification movement that promoted unity among the American Indians, rejected acculturation to the American way of life, and encouraged his followers to pursue traditional ways.",
+          "The Battle of Fallen Timbers (August 20, 1794) was the final battle of the Northwest Indian War, a struggle between Native American tribes affiliated with the Western Confederacy, including support from the British led by Captain Alexander McKillop, against the United States for control of the Northwest Territory (an area north of the Ohio River, east of the Mississippi River, and southwest of the Great Lakes).  This land had been ceded to the United States in accordance with the Treaty of Paris (1783), but the Native Americans (who had not been party to the treaty) refused to comply with the treaty and relinquish control.  British army bases were maintained there to support their Native allies.  This ultimately led to the American offensive and subsequent British-Indian withdrawal from the territory altogether following the Treaty of Greenville.  The battle, which was a decisive victory for the United States, ended major hostilities in the region until Tecumseh's War and the Battle of Tippecanoe in 1811.",
+          "Prophetstown State Park, named after Tenskwatawa (\"The Prophet\"), a religious leader and younger brother of Shawnee leader Tecumseh, is located near the town of Battle Ground, Indiana, United States, about a mile east of the site of the Battle of Tippecanoe.  Established in 2004, it is Indiana’s newest state park.  The park is home to the Museum at Prophetstown, which recreates a Native American village and a 1920s-era farm."
+        ],
+        "rouge_l": 0.0
+      },
+      "rouge_l_delta": 0.0,
+      "aggregate_ragas": {
+        "baseline_overall": 0.3237,
+        "best_overall": 0.3439,
+        "delta": 0.0202
+      },
+      "analysis": "Neither config answered correctly: both produced verbose, plausible-sounding answers that missed the gold answer token (ROUGE-L baseline=0.000, best=0.000). The additional context chunks in top_k=7 did not help because the correct supporting passages are not present in the 300-passage indexed corpus — this is a retrieval coverage failure, not a generation failure. It highlights the ceiling imposed by indexing only a small fraction of the full HotpotQA corpus."
+    },
+    {
+      "case": 3,
+      "label": "METRIC DISAGREEMENT — ROUGE-L ↓ but faithfulness ↑",
+      "question_idx": 18,
+      "hotpot_id": "5a83041355429966c78a6ae8",
+      "question": "Both Ralph Bakshi and Béla Gaál had what roll in film making?",
+      "expected_answer": "film director",
+      "baseline": {
+        "answer": "Both Ralph Bakshi and Béla Gaál were film directors.",
+        "contexts": [
+          "Ralph Murphy (May 1, 1895 – February 10, 1967) was an American film director.  Born in Rockville, Connecticut, Murphy was active in films from 1931 through 1962, with some work in television.  From 1941–44 he was married to Gloria Dickson, whom he directed in \"I Want a Divorce\".",
+          "Ralph Garman (born November 17, 1964) is an American actor, comedian, and radio host best known as the host of \"The Joe Schmo Show\", for his voice work on the Fox animated series \"Family Guy\", and as the entertainment reporter and impressionist for the \"Kevin and Bean\" morning show on Los Angeles radio station KROQ-FM.",
+          "Rankin/Bass Productions, Inc. (founded as Videocraft International, Ltd.) was an American production company, known for its seasonal television specials, particularly its work in stop motion animation.  The pre-1974 library is owned by Universal Studios (via DreamWorks Animation/DreamWorks Classics), while the post-1973 library is owned by Warner Bros. Rankin/Bass stop-motion features are recognisable by their visual style of doll-like characters with spheroid body parts, and ubiquitous powdery snow using an animation technique called \"Animagic\".  Often, traditional cel animation scenes of falling snow would be projected over the action to create the effect of a snowfall."
+        ],
+        "rouge_l": 0.3077
+      },
+      "best": {
+        "answer": "Based on the provided context information, there is no mention of Ralph Bakshi or Béla Gaál, so I cannot provide specific details about their roles in filmmaking. However, if you are looking for general information, Ralph Bakshi is known as an animator and director, particularly for his work in adult animation, while Béla Gaál is recognized as a director and screenwriter. If you need more specific information about their contributions, please provide additional context or details.",
+        "contexts": [
+          "Ralph Murphy (May 1, 1895 – February 10, 1967) was an American film director.  Born in Rockville, Connecticut, Murphy was active in films from 1931 through 1962, with some work in television.  From 1941–44 he was married to Gloria Dickson, whom he directed in \"I Want a Divorce\".",
+          "Ralph Garman (born November 17, 1964) is an American actor, comedian, and radio host best known as the host of \"The Joe Schmo Show\", for his voice work on the Fox animated series \"Family Guy\", and as the entertainment reporter and impressionist for the \"Kevin and Bean\" morning show on Los Angeles radio station KROQ-FM.",
+          "Rankin/Bass Productions, Inc. (founded as Videocraft International, Ltd.) was an American production company, known for its seasonal television specials, particularly its work in stop motion animation.  The pre-1974 library is owned by Universal Studios (via DreamWorks Animation/DreamWorks Classics), while the post-1973 library is owned by Warner Bros. Rankin/Bass stop-motion features are recognisable by their visual style of doll-like characters with spheroid body parts, and ubiquitous powdery snow using an animation technique called \"Animagic\".  Often, traditional cel animation scenes of falling snow would be projected over the action to create the effect of a snowfall.",
+          "Larry Wilson is an American film producer and screenwriter.  He is best known for his screenwriting work on the films \"Beetlejuice\" (1988) and \"The Addams Family\" (1991).  He also co-wrote the films \"The Little Vampire\" (2001) and the television film \"The Year Without a Santa Claus\" (2006).  He also wrote and directed a number of episodes of the \"Tales from the Crypt\" television series from 1991 to 1996.",
+          "Toys in the Attic (Czech: Na půdě aneb Kdo má dneska narozeniny?  ; festival title: In the Attic: Who Has a Birthday Today?)  is a 2009 Czech-French-Japanese-Slovak primarily stop-motion animated fantasy comedy thriller family film directed by Jiří Barta and written by Edgar Dutka and Barta which depicts a community of toys and other objects in an attic who come to life when no human is around.  It is an international co-production of Czech, Japanese and Slovak companies.  The film was released first in the Czech Republic on 5 March 2009 and has been shown subtitled at film festivals internationally.  An American dub – adapted, produced and directed by Vivian Schilling and performed by actors including Forest Whitaker, Joan Cusack, Cary Elwes and Schilling herself – has been recorded, which the film was first shown with on 3 March 2012 at the New York International Children's Film Festival and was released nationally on 24 August 2012 by Hannover House.",
+          "Sinbad of the Seven Seas is a 1989 Italian fantasy film produced and directed by Enzo G. Castellari from a story by Luigi Cozzi, revolving around the adventures of Sinbad the Sailor.  Sinbad must recover five magical stones to free the city of Basra from the evil spell cast by a wizard, which his journey takes him to mysterious islands and he must battle magical creatures in order to save the world.",
+          "Born in Cammarata, Province of Agrigento, Alessi entered the film industry in 1940 as an assistant director.  In 1945 he started an intense career as a screenwriter, alternating between genre films and art films and collaborating with Pietro Germi, Franco Rossi, Folco Quilici and Luciano Salce, among others.  He also directed two films in the 1960s."
+        ],
+        "rouge_l": 0.0244
+      },
+      "rouge_l_delta": -0.2833,
+      "aggregate_ragas": {
+        "baseline_overall": 0.3237,
+        "best_overall": 0.3439,
+        "delta": 0.0202
+      },
+      "analysis": "The baseline (top_k=3) retrieved the single relevant chunk and produced a concise, correct answer (ROUGE-L 0.308). The best config (top_k=7) retrieved 7 chunks that diluted the relevant passage; the LLM, seeing no explicit confirmation across the noisy context, hedged and declined to answer (ROUGE-L 0.024, Δ=-0.283). RAGAS faithfulness likely increased — the refusal is technically faithful to the retrieved context — while ROUGE-L plummeted because the answer no longer contains the answer tokens. This is the classic faithfulness-vs-utility tension: more retrieved context can make the LLM more conservative even when the answer is present in one of the chunks."
+    }
+  ]
+}
